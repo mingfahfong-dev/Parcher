@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
+<html lang="en"><head>
+<script>
+  // v19: apply the saved theme before first paint (dark is the default)
+  try{ if(localStorage.getItem('parcher_loi_theme')==='light') document.documentElement.setAttribute('data-theme','light'); }catch(e){}
+</script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ISO 2596 Parcher LOI Worksheet — v15</title>
+<title>ISO 2596 Parcher LOI Worksheet — v19</title>
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
 <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACjklEQVR4nG2Tv4tcVRTHP+fe+96bmd3NzkRIdoiyogRNIGhj/NkIUbC3M0sKUSFYp0yxvU0gFjYSF/wHrFKksNAiKAQEiZIEN8EsK5FB3fnx3jvnHos3Egl74cLhwAfu95z7EYC/Pn/xwkrhl5tWNz0TEITDjuMSyGWRdqetbK9fvH1N/rly6nwvNTvW1tTqT5BC1xDAwR0HqiTEomKh5ZZMPnv+YcliXCsmIUQISzhDzrgbWAshIbHonuFYlYgNvb2UNY9nmhGR6IsprnXHxwIpBoTeiHB0gzx9hB3sd308ztQJKY9Tq+6iWdQqGL3C2unXScdeIK6fIK5tIIOjhMFT1L9cZ/LV+0h/CDmDOBn3lNXFc8TmE4bvfcDaa1uHDC9TnTxHfPpVmvs/INUquCK4BDPHWsfdmd/6GnLbZc7WXc8gAUJk5c1PaRc1ZmBtx4WuMHJc4+Dnb5nf+Q5iASIQIkjAphPq328Tj50hnThLe/A3ZgEzJ6iBasbUsSw8+mYbNyWbUu/fY3bnJs0fvyHVCuXx5zjy1kfofI4ZaOskU8e1W3PWkuL4KchKfe8m6JxqfJI4WIeyD/WfrJ55hzR+iWb/V8JguIxggk6n9DbPsnH+KhIC/WdfZrF3F4g4gcmNL6n3dwnVEQan36WdTckmJFV3MpK1RlZHyz9QQiwZvv0xEhMAo3MXu7kAoT9Cm4wonrK55NYgVBzcvcX9Lz7p8iBITLgZ4MtaEWD24CdyXCG3KvLjh+OHSefjxsUwjVZP/7d/f+yDO8jSsqKyXtWPGqu9BMUlQt4JzSI2ORKq4aEiPhYSCvGIJKC4JADfbz1zoR/0cqO2aU74z8FDYI9CLlPcnee0/cbOg2v/Ar+HUcV4QqiCAAAAAElFTkSuQmCC">
 <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
 <meta name="theme-color" content="#f7941e">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#eef1f2;
@@ -28,6 +31,42 @@
     --sans: 'IBM Plex Sans', system-ui, sans-serif;
     --disp: 'Space Grotesk', var(--sans);
   }
+  html{color-scheme:dark;}
+  /* v19 · light theme — same tokens, Apple-style light surfaces; accents darkened for contrast on white */
+  html[data-theme="light"]{
+    color-scheme:light;
+    --ink:#1d1d1f; --ink-dim:#5b676c;
+    --bg:#f2f2f5; --bg-2:#ffffff; --bg-3:#e9ebee; --line:#d3d8db;
+    --orange:#c46200; --orange-dark:#a35200; --orange-ink:#ffffff;
+    --amber:#9a6200; --fail:#c0392b; --pass:#1e7f52;
+  }
+  html[data-theme="light"] body{
+    background:
+      radial-gradient(circle at 50% -10%, rgba(247,148,30,0.10), transparent 55%),
+      repeating-linear-gradient(0deg, rgba(0,0,0,0.025) 0px, rgba(0,0,0,0.025) 1px, transparent 1px, transparent 34px),
+      var(--bg);
+  }
+  html[data-theme="light"] .card-head .letter{background:rgba(0,0,0,0.06);}
+  html[data-theme="light"] .badge.na{background:rgba(0,0,0,0.04); border-color:rgba(0,0,0,0.12);}
+  html[data-theme="light"] .lchk.wait{background:rgba(0,0,0,0.05);}
+  html[data-theme="light"] .lpanel{background:rgba(255,255,255,0.94); box-shadow:-14px 0 40px rgba(0,0,0,0.15);}
+  html[data-theme="light"] .lbackdrop{background:rgba(0,0,0,0.2);}
+  html[data-theme="light"] .card, html[data-theme="light"] .toolbar{box-shadow:0 1px 2px rgba(0,0,0,0.05);}
+  html[data-theme="light"] #editRefBtn{background:transparent !important; color:var(--ink) !important; border-color:var(--line) !important;}
+  html[data-theme="light"] .viewtabs button[aria-selected="true"]{background:var(--bg-2); box-shadow:0 1px 3px rgba(0,0,0,0.12), inset 0 0 0 1px var(--line);}
+  html[data-theme="light"] .avgrow td{background:rgba(196,98,0,0.07);}
+  html[data-theme="light"] input.cell, html[data-theme="light"] .field input, html[data-theme="light"] .field select, html[data-theme="light"] .toolbar select{background:#ffffff;}
+  .theme-toggle{
+    width:34px; height:34px; padding:0; border-radius:50%; flex-shrink:0;
+    display:inline-flex; align-items:center; justify-content:center;
+    background:var(--bg-3); color:var(--ink); border:1px solid var(--line);
+  }
+  .theme-toggle:hover{border-color:var(--orange); color:var(--orange);}
+  .theme-toggle svg{width:17px; height:17px;}
+  .theme-toggle .sun{display:none;}
+  html[data-theme="light"] .theme-toggle .sun{display:block;}
+  html[data-theme="light"] .theme-toggle .moon{display:none;}
+  .masthead-ctrls{display:flex; align-items:center; gap:8px;}
   *{box-sizing:border-box;}
   body{
     margin:0;
@@ -219,45 +258,235 @@
   @media (prefers-reduced-motion:reduce){
     button{transition:none;}
   }
+
+  [hidden]{display:none !important;}
+  /* v18 · TGA CSV upload in Section D */
+  .tga-strip{display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; padding:10px 12px; margin-bottom:12px;
+    border:1px dashed var(--line); border-radius:8px; background:var(--bg-2); font-size:12.5px; color:var(--ink-dim);
+    transition:border-color 0.15s ease, background 0.15s ease;}
+  .tga-strip.over{border-color:var(--orange); background:rgba(247,148,30,0.08);}
+  .tga-hint{font-size:11.5px;}
+  .tga-msg{flex-basis:100%; font-family:var(--mono); font-size:11.5px; line-height:1.6;}
+  .tga-msg:empty{display:none;}
+  .tga-msg .ok{color:var(--pass);}
+  .tga-msg .warn{color:var(--amber);}
+  .srctag{display:block; font-family:var(--mono); font-size:10px; font-weight:500; color:var(--orange); margin-top:2px; white-space:nowrap;}
+  .srctag:empty{display:none;}
+  .srctag.typed{color:var(--ink-dim);}
+  /* ================= v16 · Calculation logic view ================= */
+  :focus-visible{outline:2px solid var(--orange); outline-offset:2px;}
+
+  .viewtabs{
+    display:inline-flex; gap:2px; background:var(--bg-3); border-radius:9px; padding:3px;
+    margin:0 0 18px; border:1px solid var(--line);
+  }
+  .viewtabs button{
+    border:none; background:transparent; color:var(--ink-dim); padding:7px 16px;
+    border-radius:7px; font-size:13px; font-weight:600;
+  }
+  .viewtabs button[aria-selected="true"]{
+    background:var(--bg); color:var(--ink);
+    box-shadow:0 1px 3px rgba(0,0,0,0.45), inset 0 0 0 1px var(--line);
+  }
+  body.view-iphone .viewtabs{display:flex;}
+  body.view-iphone .viewtabs button{flex:1;}
+
+  .fxbtn{
+    margin-left:auto; flex-shrink:0;
+    font-family:var(--mono); font-style:italic; font-size:12px; font-weight:600;
+    padding:3px 10px; border-radius:999px; line-height:1.5;
+    background:transparent; color:var(--ink-dim); border:1px solid var(--line);
+  }
+  .fxbtn:hover{color:var(--orange); border-color:var(--orange);}
+  body.view-iphone .fxbtn{min-height:0; padding:3px 10px; font-size:12px;}
+
+  /* banner + flow */
+  .lbanner{
+    display:flex; gap:12px; align-items:flex-start; padding:12px 14px; margin-bottom:16px;
+    border-radius:10px; border:1px solid var(--line); background:var(--bg-2);
+    font-size:13px; line-height:1.5; color:var(--ink-dim);
+  }
+  .lbanner strong{color:var(--ink); font-weight:600;}
+  .lbanner-ico{
+    flex-shrink:0; width:22px; height:22px; border-radius:50%; display:flex;
+    align-items:center; justify-content:center; font-size:12px; font-weight:700;
+    background:var(--bg-3); color:var(--ink-dim);
+  }
+  .lbanner.ok{border-color:rgba(79,191,138,0.45);}
+  .lbanner.ok .lbanner-ico{background:rgba(79,191,138,0.18); color:var(--pass);}
+  .lbanner.bad{border-color:rgba(226,104,92,0.55); background:rgba(226,104,92,0.08);}
+  .lbanner.bad .lbanner-ico{background:rgba(226,104,92,0.2); color:var(--fail);}
+
+  .lflow{display:flex; flex-wrap:wrap; align-items:center; gap:6px 8px; margin:0 0 6px;}
+  .lnode{
+    font-family:var(--sans); font-size:12.5px; font-weight:600; color:var(--ink);
+    background:var(--bg-2); border:1px solid var(--line); border-radius:999px;
+    padding:6px 12px 6px 6px; display:inline-flex; align-items:center; gap:7px;
+  }
+  .lnode b{
+    font-family:var(--disp); font-size:11.5px; width:20px; height:20px; border-radius:50%;
+    display:inline-flex; align-items:center; justify-content:center;
+    background:rgba(247,148,30,0.16); color:var(--orange);
+  }
+  .lnode:hover{border-color:var(--orange);}
+  .lnode.end{background:transparent; border-style:dashed; color:var(--ink-dim); padding-left:12px;}
+  .larrow{color:var(--ink-dim); font-size:13px;}
+
+  /* groups + steps */
+  .lgroup{margin:28px 0 0;}
+  .lgroup > h2{
+    font-family:var(--disp); font-size:18px; font-weight:600; margin:0 0 12px;
+    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+  }
+  .lgroup > h2 .letter{
+    font-size:14px; width:26px; height:26px; border-radius:6px; display:flex;
+    align-items:center; justify-content:center; background:var(--bg-3); border:1px solid var(--line);
+  }
+  .lgroup > h2 small{font-family:var(--sans); font-size:12.5px; font-weight:400; color:var(--ink-dim);}
+
+  .lstep{
+    background:var(--bg-2); border:1px solid var(--line); border-radius:10px;
+    padding:16px 18px; margin-bottom:12px;
+  }
+  .lstep-head{display:flex; align-items:baseline; gap:10px;}
+  .lnum{
+    font-family:var(--mono); font-size:11px; font-weight:600; color:var(--orange);
+    border:1px solid rgba(247,148,30,0.45); border-radius:4px; padding:1px 6px;
+  }
+  .lstep h3{font-family:var(--disp); font-size:15px; font-weight:600; margin:0; color:var(--ink);}
+  .lwhy{font-size:13px; line-height:1.6; color:var(--ink-dim); margin:6px 0 12px; max-width:74ch;}
+  .lformula{
+    font-family:var(--mono); font-size:14.5px; color:var(--ink);
+    background:var(--bg); border:1px solid var(--line); border-left:3px solid var(--orange);
+    border-radius:6px; padding:10px 14px; overflow-x:auto; white-space:nowrap;
+  }
+  .lformula var, .lwhy var, .ldefs var{font-style:italic; font-family:var(--mono);}
+  #L_D0 .lformula{white-space:normal; line-height:1.9;}
+  .ldefs{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:4px 18px; margin:10px 0 4px; font-size:12px; color:var(--ink-dim);
+  }
+  .ldefs div{display:flex; gap:8px;}
+  .ldefs dt{font-family:var(--mono); font-style:italic; color:var(--ink); min-width:3.4em;}
+  .ldefs dd{margin:0;}
+
+  .lwork-wrap{overflow-x:auto; margin-top:10px;}
+  .lstep .lwork{font-size:12.5px;}
+  .lstep .lwork th{
+    background:none; text-transform:none; letter-spacing:0; font-size:12px; font-weight:600;
+    color:var(--ink); border-bottom:1px solid var(--line); padding:6px 10px 6px 0; white-space:nowrap;
+    position:static; box-shadow:none;
+  }
+  .lstep .lwork td{font-family:var(--mono); padding:6px 10px 6px 0;}
+  .lstep .lwork tr:last-child th, .lstep .lwork tr:last-child td{border-bottom:none;}
+  .lexpr{color:var(--ink-dim);}
+  .lres{color:var(--ink); white-space:nowrap;}
+  .lcheck{text-align:right; white-space:nowrap; padding-right:0 !important;}
+  .lmiss{color:var(--amber); font-weight:600;}
+  .lchk{font-family:var(--mono); font-size:11px; padding:2px 8px; border-radius:999px; white-space:nowrap;}
+  .lchk span{opacity:0.85;}
+  .lchk.ok{color:var(--pass); background:rgba(79,191,138,0.12);}
+  .lchk.bad{color:var(--fail); background:rgba(226,104,92,0.16); font-weight:600;}
+  .lchk.wait{color:var(--ink-dim); background:rgba(255,255,255,0.05);}
+
+  .lnote{
+    font-size:12.5px; line-height:1.6; color:var(--ink-dim);
+    margin-top:12px; padding-top:10px; border-top:1px dashed var(--line); max-width:80ch;
+  }
+  .lnote p{margin:0 0 6px;}
+  .lnote p:last-child{margin-bottom:0;}
+  .lnote strong{color:var(--ink); font-weight:600;}
+  .lflag{color:var(--amber);}
+  .lflag strong{color:var(--amber);}
+
+  .labout dl{display:grid; grid-template-columns:max-content 1fr; gap:6px 16px; margin:8px 0 0; font-size:13px; line-height:1.55;}
+  .labout dt{color:var(--ink); font-weight:600;}
+  .labout dd{margin:0; color:var(--ink-dim);}
+  .labout code{font-family:var(--mono); font-size:12px; color:var(--ink);}
+  .lchangelog{list-style:none; padding:0; margin:8px 0 0;}
+  .lchangelog li{padding:10px 0; border-top:1px solid var(--line); font-size:13px; line-height:1.55; color:var(--ink-dim);}
+  .lchangelog li:first-child{border-top:none; padding-top:2px;}
+  .lchangelog b{font-family:var(--mono); color:var(--ink); margin-right:8px;}
+  body.view-iphone .labout dl{grid-template-columns:1fr; gap:2px;}
+  body.view-iphone .labout dd{margin-bottom:8px;}
+
+  /* side panel (ƒx) */
+  .lpanel{
+    position:fixed; top:0; right:0; height:100%; width:min(460px,100vw); z-index:50;
+    display:flex; flex-direction:column;
+    background:rgba(28,34,37,0.94);
+    -webkit-backdrop-filter:blur(18px) saturate(140%); backdrop-filter:blur(18px) saturate(140%);
+    border-left:1px solid var(--line); box-shadow:-14px 0 40px rgba(0,0,0,0.45);
+    transform:translateX(102%); visibility:hidden;
+    transition:transform 0.28s cubic-bezier(0.2,0.8,0.2,1), visibility 0s linear 0.28s;
+  }
+  .lpanel.open{transform:none; visibility:visible; transition:transform 0.28s cubic-bezier(0.2,0.8,0.2,1), visibility 0s;}
+  .lpanel-head{display:flex; align-items:center; gap:10px; padding:14px 16px; border-bottom:1px solid var(--line);}
+  .lpanel-head h2{font-family:var(--disp); font-size:15px; font-weight:600; margin:0; flex:1;}
+  .fxmark{font-family:var(--mono); font-style:italic; font-weight:600; color:var(--orange); font-size:15px;}
+  .lpanel-body{flex:1; overflow-y:auto; padding:14px 16px 24px; overscroll-behavior:contain;}
+  .lpanel-body .lstep{padding:13px 14px;}
+  .lpanel-body .lformula{font-size:13px;}
+  .lpanel-foot{padding:12px 16px; border-top:1px solid var(--line); display:flex; justify-content:flex-end;}
+  .lbackdrop{
+    position:fixed; inset:0; z-index:49; background:rgba(0,0,0,0.38);
+    opacity:0; pointer-events:none; transition:opacity 0.2s ease;
+  }
+  .lbackdrop.open{opacity:1; pointer-events:auto;}
+  /* Wide screens: no dimming — worksheet slides left so you can type and watch the
+     worked example update beside it. */
+  @media (min-width:1320px){
+    .lbackdrop.open{opacity:0; pointer-events:none;}
+    body.lpanel-open .wrap{margin-right:480px; margin-left:auto; transition:margin 0.28s ease;}
+  }
+  body.view-iphone .lformula, .lpanel-body .lformula{white-space:normal;}
+  body.view-iphone .lformula{font-size:12.5px;}
+  @media (prefers-reduced-motion:reduce){
+    .lpanel, .lpanel.open, .lbackdrop, body.lpanel-open .wrap{transition:none;}
+  }
 </style>
 </head>
-<body>
+<body class="view-ipad">
 <div class="wrap">
 
   <div class="masthead">
     <div>
-      <h1>ISO 2596 Parcher &mdash; Loss on Ignition Worksheet</h1>
-      <div class="sub">PMLB &middot; digitised from Parcher_plus_LOI_v2.xlsm &middot; v15</div>
+      <h1>ISO 2596 Parcher — Loss on Ignition Worksheet</h1>
+      <div class="sub">PMLB · digitised from Parcher_plus_LOI_v2.xlsm · v19</div>
     </div>
+    <div class="masthead-ctrls">
     <div class="device-switch" id="deviceSwitch" title="Switch the layout between iPad and iPhone 16 Pro Max sizing">
-      <button type="button" id="mode_ipad" data-mode="ipad">iPad</button>
+      <button type="button" id="mode_ipad" data-mode="ipad" class="active">iPad</button>
       <button type="button" id="mode_iphone" data-mode="iphone">iPhone 16 Pro Max</button>
+    </div>
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to light mode" title="Switch to light mode">
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+    </button>
     </div>
   </div>
 
-  <div class="toolbar">
-    <span class="status" id="storageStatus"><span class="pip"></span> Ready</span>
-    <select id="draftSelect" title="Pick a previously saved draft to load, then click Load">
-      <option value="">— Load a saved draft —</option>
-    </select>
-    <button class="btn-ghost" id="loadDraftBtn" title="Load the draft selected above into the worksheet, replacing what's currently on screen">Load</button>
-    <button class="btn-danger" id="deleteDraftBtn" title="Permanently delete the draft selected above — cannot be undone">Delete</button>
-    <button class="btn-ghost" id="newFormBtn" title="Clear the worksheet and start a fresh, blank, unlocked entry">+ New Blank Form</button>
+  <div class="viewtabs" id="viewTabs" role="tablist" aria-label="View">
+    <button type="button" role="tab" id="tab_worksheet" data-view="worksheet" aria-selected="true" aria-controls="view-worksheet">Worksheet</button>
+    <button type="button" role="tab" id="tab_logic" data-view="logic" aria-selected="false" aria-controls="view-logic" tabindex="-1">Calculation logic</button>
   </div>
-  <div class="toolbar" style="margin-top:-10px;">
-    <span style="font-family:var(--mono); font-size:11.5px; color:var(--ink-dim); flex:1;">
-      This file runs locally in your browser — drafts and the log below are saved on <em>this</em> machine only.
-      To share the log with the team, export it and drop the file in your shared OneDrive folder; teammates import it to merge in new entries.
-    </span>
-    <button class="btn-ghost" id="exportLogBtn" title="Download all Summary Log entries as a .json file, e.g. to share via OneDrive">Export Log (.json)</button>
-    <button class="btn-ghost" id="exportCsvBtn" title="Download the Summary Log as a tidy .csv (one row per product per submission) — built for Power BI's Text/CSV connector">Export Log (.csv)</button>
-    <button class="btn-ghost" id="importLogBtn" title="Pick a .json log file and merge its entries into the Summary Log below (duplicates are skipped)">Import Log (.json)</button>
-    <button class="btn-danger" id="clearLogBtn" title="Permanently erase every entry in the Summary Log on this machine — export first if you want a backup">Clear Log</button>
-    <input type="file" id="importLogFile" accept="application/json" style="display:none;">
+
+<div id="view-worksheet" role="tabpanel" aria-labelledby="tab_worksheet">
+  <div class="toolbar">
+    <span class="status" id="storageStatus"><span class="pip" style="background:var(--pass)"></span> Ready</span>
+    <button class="btn-ghost" id="loadPdfBtn" title="Open a draft or final PDF made by this tool and refill the worksheet from it">Load from PDF</button>
+    <button class="btn-ghost" id="newFormBtn" title="Clear the worksheet and start a fresh, blank entry">+ New Blank Form</button>
+    <input type="file" id="loadPdfFile" accept="application/pdf,.pdf" hidden>
+  </div>
+  <div class="toolbar" id="legacyDrafts" style="margin-top:-10px;" hidden>
+    <span class="status" id="legacyMsg"></span>
+    <select id="legacySelect" title="Drafts saved in this browser by v16 and earlier"></select>
+    <button class="btn-ghost" id="legacyLoadBtn" title="Open this old browser draft in the worksheet">Open</button>
+    <button class="btn-danger" id="legacyClearBtn" title="Remove all older browser drafts from this browser">Remove old drafts</button>
   </div>
 
   <div class="card">
-    <div class="card-head"><div class="letter">&#9776;</div><h2>Worksheet Details</h2></div>
+    <div class="card-head"><div class="letter">☰</div><h2>Worksheet Details</h2></div>
     <div class="card-body">
       <div class="headerfields">
         <div class="field"><label>Date</label><input type="date" id="f_date"></div>
@@ -269,7 +498,7 @@
 
   <!-- SECTION A -->
   <div class="card">
-    <div class="card-head"><div class="letter">A</div><h2>Hygroscopic Moisture &mdash; Blanks, STD &amp; Parcher H&#8322;O</h2></div>
+    <div class="card-head"><div class="letter">A</div><h2>Hygroscopic Moisture — Blanks, STD &amp; Parcher H₂O</h2><button type="button" class="fxbtn" data-logic="A" aria-label="Show how Section A is calculated" title="Show how this section is calculated">ƒx</button></div>
     <div class="card-body" style="overflow-x:auto;">
       <table id="tableA">
         <thead>
@@ -279,7 +508,97 @@
             <th>Dry Mass</th><th>% Hygroscopic Moisture</th><th>Check</th>
           </tr>
         </thead>
-        <tbody><!-- rows injected --></tbody>
+        <tbody><tr>
+        <td class="rowlabel">Blank 1</td>
+        <td class="computed-cell">1</td>
+        <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.blank.0.D" id="In_A_blank_0_D"></td>
+        <td class="computed-cell">—</td>
+        <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.blank.0.F" id="In_A_blank_0_F"></td>
+        <td class="computed-cell" id="Out_A_blank_0_G">—</td>
+        <td class="computed-cell">—</td>
+        <td class="computed-cell">—</td>
+      </tr><tr>
+        <td class="rowlabel">Blank 2</td>
+        <td class="computed-cell">2</td>
+        <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.blank.1.D" id="In_A_blank_1_D"></td>
+        <td class="computed-cell">—</td>
+        <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.blank.1.F" id="In_A_blank_1_F"></td>
+        <td class="computed-cell" id="Out_A_blank_1_G">—</td>
+        <td class="computed-cell">—</td>
+        <td class="computed-cell">—</td>
+      </tr><tr class="avgrow"><td colspan="5">average dry mass (used as H₂O reference)</td><td class="computed-cell" id="Out_A_blankAvg">—</td><td colspan="2"></td></tr><tr>
+        <td class="rowlabel">STD 1</td>
+        <td class="computed-cell">3</td>
+        <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.std.0.D" id="In_A_std_0_D"></td>
+        <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.std.0.E" id="In_A_std_0_E"></td>
+        <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.std.0.F" id="In_A_std_0_F"></td>
+        <td class="computed-cell" id="Out_A_std_0_G">—</td>
+        <td class="computed-cell" id="Out_A_std_0_H">—</td>
+        <td id="Out_A_std_0_chk"><span class="badge na">–</span></td>
+      </tr><tr>
+        <td class="rowlabel">STD 2</td>
+        <td class="computed-cell">4</td>
+        <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.std.1.D" id="In_A_std_1_D"></td>
+        <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.std.1.E" id="In_A_std_1_E"></td>
+        <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.std.1.F" id="In_A_std_1_F"></td>
+        <td class="computed-cell" id="Out_A_std_1_G">—</td>
+        <td class="computed-cell" id="Out_A_std_1_H">—</td>
+        <td id="Out_A_std_1_chk"><span class="badge na">–</span></td>
+      </tr><tr class="avgrow"><td colspan="6">average STD % moisture (target 28.5–29.2%)</td><td class="computed-cell" id="Out_A_stdAvg">—</td><td></td></tr><tr>
+          <td class="rowlabel">A30 – 1</td>
+          <td class="computed-cell">5</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A30.0.D" id="In_A_A30_0_D"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A30.0.E" id="In_A_A30_0_E"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A30.0.F" id="In_A_A30_0_F"></td>
+          <td class="computed-cell" id="Out_A_A30_0_G">—</td>
+          <td class="computed-cell" id="Out_A_A30_0_H">—</td>
+          <td class="computed-cell">—</td>
+        </tr><tr>
+          <td class="rowlabel">A30 – 2</td>
+          <td class="computed-cell">6</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A30.1.D" id="In_A_A30_1_D"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A30.1.E" id="In_A_A30_1_E"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A30.1.F" id="In_A_A30_1_F"></td>
+          <td class="computed-cell" id="Out_A_A30_1_G">—</td>
+          <td class="computed-cell" id="Out_A_A30_1_H">—</td>
+          <td class="computed-cell">—</td>
+        </tr><tr class="avgrow"><td colspan="6">average A30 Parcher H₂O</td><td class="computed-cell" id="Out_A_A30_avg">—</td><td></td></tr><tr>
+          <td class="rowlabel">A32 – 1</td>
+          <td class="computed-cell">7</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A32.0.D" id="In_A_A32_0_D"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A32.0.E" id="In_A_A32_0_E"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A32.0.F" id="In_A_A32_0_F"></td>
+          <td class="computed-cell" id="Out_A_A32_0_G">—</td>
+          <td class="computed-cell" id="Out_A_A32_0_H">—</td>
+          <td class="computed-cell">—</td>
+        </tr><tr>
+          <td class="rowlabel">A32 – 2</td>
+          <td class="computed-cell">8</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A32.1.D" id="In_A_A32_1_D"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A32.1.E" id="In_A_A32_1_E"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A32.1.F" id="In_A_A32_1_F"></td>
+          <td class="computed-cell" id="Out_A_A32_1_G">—</td>
+          <td class="computed-cell" id="Out_A_A32_1_H">—</td>
+          <td class="computed-cell">—</td>
+        </tr><tr class="avgrow"><td colspan="6">average A32 Parcher H₂O</td><td class="computed-cell" id="Out_A_A32_avg">—</td><td></td></tr><tr>
+          <td class="rowlabel">A34 – 1</td>
+          <td class="computed-cell">9</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A34.0.D" id="In_A_A34_0_D"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A34.0.E" id="In_A_A34_0_E"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A34.0.F" id="In_A_A34_0_F"></td>
+          <td class="computed-cell" id="Out_A_A34_0_G">—</td>
+          <td class="computed-cell" id="Out_A_A34_0_H">—</td>
+          <td class="computed-cell">—</td>
+        </tr><tr>
+          <td class="rowlabel">A34 – 2</td>
+          <td class="computed-cell">10</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A34.1.D" id="In_A_A34_1_D"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A34.1.E" id="In_A_A34_1_E"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="A.A34.1.F" id="In_A_A34_1_F"></td>
+          <td class="computed-cell" id="Out_A_A34_1_G">—</td>
+          <td class="computed-cell" id="Out_A_A34_1_H">—</td>
+          <td class="computed-cell">—</td>
+        </tr><tr class="avgrow"><td colspan="6">average A34 Parcher H₂O</td><td class="computed-cell" id="Out_A_A34_avg">—</td><td></td></tr></tbody>
       </table>
     </div>
     <div class="legend"><span><span class="dot entry"></span>data entry</span><span><span class="dot calc"></span>calculated</span></div>
@@ -287,24 +606,81 @@
 
   <!-- SECTION B -->
   <div class="card">
-    <div class="card-head"><div class="letter">B</div><h2>Manual XLOI</h2></div>
+    <div class="card-head"><div class="letter">B</div><h2>Manual XLOI</h2><button type="button" class="fxbtn" data-logic="B" aria-label="Show how Section B is calculated" title="Show how this section is calculated">ƒx</button></div>
     <div class="card-body" style="overflow-x:auto;">
       <table id="tableB">
         <thead>
-          <tr><th>Product</th><th>Empty Crucible</th><th>Crucible + Sample</th><th>Sum</th><th>Crucible + Dry</th><th>Manual XLOI (%)</th></tr>
+          <tr><th>Product</th><th>Empty Crucible</th><th>Sample Only</th><th>Sum</th><th>Crucible + Dry</th><th>Manual XLOI (%)</th></tr>
         </thead>
-        <tbody><!-- rows injected --></tbody>
+        <tbody><tr>
+          <td class="rowlabel">A30 – 1</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A30.0.C" id="In_B_A30_0_C"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A30.0.D" id="In_B_A30_0_D"></td>
+          <td class="computed-cell" id="Out_B_A30_0_E">—</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A30.0.F" id="In_B_A30_0_F"></td>
+          <td class="computed-cell" id="Out_B_A30_0_G">—</td>
+        </tr><tr>
+          <td class="rowlabel">A30 – 2</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A30.1.C" id="In_B_A30_1_C"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A30.1.D" id="In_B_A30_1_D"></td>
+          <td class="computed-cell" id="Out_B_A30_1_E">—</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A30.1.F" id="In_B_A30_1_F"></td>
+          <td class="computed-cell" id="Out_B_A30_1_G">—</td>
+        </tr><tr class="avgrow"><td colspan="5">average A30 Manual XLOI</td><td class="computed-cell" id="Out_B_A30_avg">—</td></tr><tr>
+          <td class="rowlabel">A32 – 1</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A32.0.C" id="In_B_A32_0_C"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A32.0.D" id="In_B_A32_0_D"></td>
+          <td class="computed-cell" id="Out_B_A32_0_E">—</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A32.0.F" id="In_B_A32_0_F"></td>
+          <td class="computed-cell" id="Out_B_A32_0_G">—</td>
+        </tr><tr>
+          <td class="rowlabel">A32 – 2</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A32.1.C" id="In_B_A32_1_C"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A32.1.D" id="In_B_A32_1_D"></td>
+          <td class="computed-cell" id="Out_B_A32_1_E">—</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A32.1.F" id="In_B_A32_1_F"></td>
+          <td class="computed-cell" id="Out_B_A32_1_G">—</td>
+        </tr><tr class="avgrow"><td colspan="5">average A32 Manual XLOI</td><td class="computed-cell" id="Out_B_A32_avg">—</td></tr><tr>
+          <td class="rowlabel">A34 – 1</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A34.0.C" id="In_B_A34_0_C"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A34.0.D" id="In_B_A34_0_D"></td>
+          <td class="computed-cell" id="Out_B_A34_0_E">—</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A34.0.F" id="In_B_A34_0_F"></td>
+          <td class="computed-cell" id="Out_B_A34_0_G">—</td>
+        </tr><tr>
+          <td class="rowlabel">A34 – 2</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A34.1.C" id="In_B_A34_1_C"></td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A34.1.D" id="In_B_A34_1_D"></td>
+          <td class="computed-cell" id="Out_B_A34_1_E">—</td>
+          <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="B.A34.1.F" id="In_B_A34_1_F"></td>
+          <td class="computed-cell" id="Out_B_A34_1_G">—</td>
+        </tr><tr class="avgrow"><td colspan="5">average A34 Manual XLOI</td><td class="computed-cell" id="Out_B_A34_avg">—</td></tr></tbody>
       </table>
     </div>
   </div>
 
   <!-- SECTION C -->
   <div class="card">
-    <div class="card-head"><div class="letter">C</div><h2>Manual LOI Calculation</h2></div>
+    <div class="card-head"><div class="letter">C</div><h2>Manual LOI Calculation</h2><button type="button" class="fxbtn" data-logic="C" aria-label="Show how Section C is calculated" title="Show how this section is calculated">ƒx</button></div>
     <div class="card-body" style="overflow-x:auto;">
       <table id="tableC">
-        <thead><tr><th>Product</th><th>Avg Manual XLOI</th><th>Avg Parcher H&#8322;O</th><th>Manual LOI (%)</th></tr></thead>
-        <tbody><!-- rows injected --></tbody>
+        <thead><tr><th>Product</th><th>Avg Manual XLOI</th><th>Avg Parcher H₂O</th><th>Manual LOI (%)</th></tr></thead>
+        <tbody><tr>
+        <td class="rowlabel">A30</td>
+        <td class="computed-cell" id="Out_C_A30_C">—</td>
+        <td class="computed-cell" id="Out_C_A30_D">—</td>
+        <td class="computed-cell"><strong id="Out_C_A30_E">—</strong></td>
+      </tr><tr>
+        <td class="rowlabel">A32</td>
+        <td class="computed-cell" id="Out_C_A32_C">—</td>
+        <td class="computed-cell" id="Out_C_A32_D">—</td>
+        <td class="computed-cell"><strong id="Out_C_A32_E">—</strong></td>
+      </tr><tr>
+        <td class="rowlabel">A34</td>
+        <td class="computed-cell" id="Out_C_A34_C">—</td>
+        <td class="computed-cell" id="Out_C_A34_D">—</td>
+        <td class="computed-cell"><strong id="Out_C_A34_E">—</strong></td>
+      </tr></tbody>
       </table>
     </div>
   </div>
@@ -312,8 +688,10 @@
   <!-- SECTION D -->
   <div class="card stamp-wrap">
     <div class="card-head" style="justify-content:space-between;">
-      <div style="display:flex;align-items:center;gap:10px;"><div class="letter">D</div><h2>Auto TGA vs. Manual LOI &mdash; Pass / Fail</h2></div>
+      <div style="display:flex;align-items:center;gap:10px;"><div class="letter">D</div><h2>Auto TGA vs. Manual LOI — Pass / Fail</h2></div>
+      <div style="display:flex; align-items:center; gap:8px;"><button type="button" class="fxbtn" data-logic="D" aria-label="Show how Section D is calculated" title="Show how this section is calculated" style="margin-left:0;">ƒx</button>
       <button class="btn-ghost" id="editRefBtn" title="Set the ASCRM certified values for the current reference material batch — these display as read-only reference, not per-worksheet data" style="background:rgba(255,255,255,0.12); color:#fff; border-color:rgba(255,255,255,0.3);">Edit reference values</button>
+      </div>
     </div>
     <div id="refEditor" class="card-body" style="display:none; border-bottom:1px solid var(--line); background:var(--bg-3);">
       <div class="headerfields">
@@ -330,9 +708,37 @@
       </div>
     </div>
     <div class="card-body" style="overflow-x:auto;">
+      <div class="tga-strip" id="tgaDrop">
+        <span>Auto results: type them in, or</span>
+        <button type="button" class="btn-ghost" id="tgaBtn" title="Pick the TGA801 run .csv files (one per product) — Auto H₂O and Auto LOI are calculated and filled in">Upload TGA CSV</button>
+        <span class="tga-hint">or drop the run files here · one per product (A30, A32, A34)</span>
+        <input type="file" id="tgaFile" accept=".csv,text/csv" multiple hidden>
+        <div class="tga-msg" id="tgaMsg" role="status" aria-live="polite"></div>
+      </div>
       <table id="tableD">
         <thead><tr><th>Product</th><th>Manual LOI</th><th>Auto Hygroscopic Moisture</th><th>Auto LOI</th><th>Certified Value (ref.)</th><th>Result</th></tr></thead>
-        <tbody><!-- rows injected --></tbody>
+        <tbody><tr>
+        <td class="rowlabel">A30</td>
+        <td class="computed-cell" id="Out_D_A30_manualLOI">—</td>
+        <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="D.A30.autoH2O" id="In_D_A30_autoH2O"></td>
+        <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="D.A30.autoLOI" id="In_D_A30_autoLOI"></td>
+        <td class="computed-cell" id="Out_D_A30_certified">9.24%</td>
+        <td id="Out_D_A30_result"><span class="badge na">pending</span></td>
+      </tr><tr>
+        <td class="rowlabel">A32</td>
+        <td class="computed-cell" id="Out_D_A32_manualLOI">—</td>
+        <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="D.A32.autoH2O" id="In_D_A32_autoH2O"></td>
+        <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="D.A32.autoLOI" id="In_D_A32_autoLOI"></td>
+        <td class="computed-cell" id="Out_D_A32_certified">2.90%</td>
+        <td id="Out_D_A32_result"><span class="badge na">pending</span></td>
+      </tr><tr>
+        <td class="rowlabel">A34</td>
+        <td class="computed-cell" id="Out_D_A34_manualLOI">—</td>
+        <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="D.A34.autoH2O" id="In_D_A34_autoH2O"></td>
+        <td><input class="cell" type="text" inputmode="decimal" autocomplete="off" placeholder="" data-path="D.A34.autoLOI" id="In_D_A34_autoLOI"></td>
+        <td class="computed-cell" id="Out_D_A34_certified">4.76%</td>
+        <td id="Out_D_A34_result"><span class="badge na">pending</span></td>
+      </tr></tbody>
       </table>
     </div>
     <div id="overallStamp" class="stamp pending">PENDING</div>
@@ -340,19 +746,19 @@
 
   <div class="actions">
     <span class="status" id="draftStatus"><span class="pip"></span> No unsaved draft</span>
-    <button class="btn-ghost" id="saveDraftBtn" title="Save this half-finished worksheet so you (or a teammate on this machine) can resume it later">Save Draft</button>
-    <button class="btn-primary" id="submitBtn" title="Finalize this worksheet, add it as a permanent row in the Summary Log, and lock all fields from further editing">Submit</button>
+    <button class="btn-ghost" id="saveDraftBtn" title="Save this worksheet as a PDF marked DRAFT — anyone can open it later with Load from PDF and finish it">Save Draft</button>
+    <button class="btn-primary" id="submitBtn" title="Finalise: save the final PDF (replacing the draft PDF it came from, where the browser allows) and update the Summary Log">Submit</button>
   </div>
 
   <!-- SUMMARY LOG -->
   <div class="card">
-    <div class="card-head"><div class="letter">&#8721;</div><h2>Summary Log</h2></div>
+    <div class="card-head"><div class="letter">∑</div><h2>Summary Log</h2><button class="btn-danger" id="clearLogBtn" style="margin-left:auto; padding:4px 10px; font-size:12px;" title="Erase the Summary Log on this machine — cannot be undone">Clear Log</button></div>
     <div class="card-body logtable-wrap">
       <table class="logtable" id="logTable">
         <thead>
           <tr>
             <th rowspan="2" class="left">Date</th><th rowspan="2" class="left">Work Order</th><th rowspan="2" class="left">Analyst</th>
-            <th colspan="3">Parcher H&#8322;O</th><th colspan="3">Manual LOI</th><th colspan="3">Auto H&#8322;O</th><th colspan="3">Auto LOI</th><th colspan="3">Pass/Fail</th>
+            <th colspan="3">Parcher H₂O</th><th colspan="3">Manual LOI</th><th colspan="3">Auto H₂O</th><th colspan="3">Auto LOI</th><th colspan="3">Pass/Fail</th>
           </tr>
           <tr>
             <th>A30</th><th>A32</th><th>A34</th>
@@ -368,11 +774,116 @@
     </div>
   </div>
 
+</div><!-- /view-worksheet -->
+
+<div id="view-logic" role="tabpanel" aria-labelledby="tab_logic" hidden>
+  <div class="masthead" style="border-bottom-width:1px; margin-bottom:16px;">
+    <div>
+      <h1 style="font-size:20px;">How the numbers are worked out</h1>
+      <div class="sub">Live worked example from the current worksheet · read-only · recalculated independently</div>
+    </div>
+  </div>
+
+  <div id="logicDyn"></div>
+
+  <section class="lgroup" id="Lsec_precision" aria-labelledby="Lh_precision">
+    <h2 id="Lh_precision"><span class="letter">#</span>Rounding and precision<small>What you see vs what is used</small></h2>
+    <article class="lstep">
+      <div class="lnote" style="margin-top:0; padding-top:0; border-top:none;">
+        <p><strong>Calculations</strong> always use the full-precision numbers. Nothing is rounded between steps.</p>
+        <p><strong>Worksheet display:</strong> masses to 4 decimal places, percentages to 2. <strong>Summary Log table and PDF:</strong> 2 decimal places. <strong>CSV export:</strong> 4 decimal places.</p>
+        <p><strong>Pass / Fail decisions</strong> (STD check and Auto vs manual LOI) use the unrounded values, so a result on the edge can pass or fail differently from what the rounded display suggests.</p>
+        <p><strong>Load from PDF:</strong> PDFs from v17 carry an exact copy of every value, so a refill is lossless. Older v15/v16 PDFs are read from their printed values — weights to 4 dp, Auto H₂O and Auto LOI to 2 dp.</p>
+        <p><strong>Decimal commas</strong> typed into a cell are read as decimal points (e.g. 1,25 is read as 1.25).</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="lgroup labout" id="Lsec_about" aria-labelledby="Lh_about">
+    <h2 id="Lh_about"><span class="letter">i</span>About this tool<small>Purpose, context and version history</small></h2>
+    <article class="lstep">
+      <header class="lstep-head"><h3>Purpose</h3></header>
+      <p class="lwhy" style="margin-bottom:0;">Digitises the ISO 2596 Parcher LOI worksheet (<code>Parcher_plus_LOI_v2.xlsm</code>) used at PMLB. It calculates hygroscopic moisture for the A30, A32 and A34 reference materials with blank and STD checks, the manual XLOI and the manual LOI on a dry-sample basis, then compares the manual LOI with the TGA (auto) LOI using a ±5% relative tolerance.</p>
+    </article>
+    <article class="lstep">
+      <header class="lstep-head"><h3>Context</h3></header>
+      <dl>
+        <dt>Runs</dt><dd>Locally in the browser (downloaded file or GitHub Pages). No server — nothing leaves the machine unless exported.</dd>
+        <dt>Drafts</dt><dd>Save Draft writes a PDF marked DRAFT on every page (<code>…_DRAFT.pdf</code>). Load from PDF refills the worksheet from any draft or final PDF made by this tool. Each v17 PDF embeds an exact copy of the data in its Subject field (<code>PLOI1:</code> + base64 JSON).</dd>
+        <dt>Saved in browser</dt><dd>This machine only: <code>parcher_loi_summary_log</code>, <code>parcher_loi_certified_values</code>, <code>parcher_loi_device_mode</code>, <code>parcher_loi_theme</code>. Older drafts in <code>parcher_loi_drafts</code> can still be opened, but no new ones are written there.</dd>
+        <dt>Sharing</dt><dd>Share the PDFs — a draft PDF can be finished on any device by loading it.</dd>
+        <dt>Submit</dt><dd>Needs Date, Analyst and Work Order. Replaces the Summary Log entry (the log keeps the latest submission) and saves the final PDF. If the worksheet came from a draft PDF opened in Chrome or Edge on a PC, the final PDF replaces that draft file and drops “_DRAFT” from its name where the browser allows. Elsewhere it saves a new final PDF and reminds you to delete the draft.</dd>
+        <dt>TGA CSV</dt><dd>Section D accepts typed Auto values or the TGA801 run files (one per product, <code>;</code>-separated, no header). Auto H₂O = LOI105 and Auto LOI = LOI1000 from the file’s weights and correction factors, using the same formulas as the LOI Correction Factor Preview.</dd>
+        <dt>Certified values</dt><dd>ASCRM defaults A30 9.24%, A32 2.90%, A34 4.76%. Set once per reference batch via “Edit reference values”. Shown and logged for reference only.</dd>
+        <dt>Libraries</dt><dd>jsPDF 4.2.1 and jsPDF-AutoTable 5.0.8, bundled inline so PDF export works offline.</dd>
+        <dt>Logic view</dt><dd>Recalculates every step separately from the worksheet engine and compares the two. It never changes the worksheet, drafts, log or exports.</dd>
+      </dl>
+    </article>
+    <article class="lstep">
+      <header class="lstep-head"><h3>Version history</h3></header>
+      <ul class="lchangelog">
+        <li><b>v19 · 8 Nov 2026</b>Section B’s “Crucible + Sample” column renamed “Sample Only” (worksheet and PDF), because the calculation uses it as the sample mass. Added a light / dark mode toggle in the header; dark is the default and the choice is remembered per browser. No change to any calculation.</li>
+        <li><b>v18 · 8 Nov 2026</b>Section D can now be typed in or filled from the TGA801 run CSVs (button or drag-and-drop, several files at once). Auto H₂O = LOI105 and Auto LOI = LOI1000, calculated with the LOI Correction Factor Preview formulas. Each product shows a “CSV” or “typed” tag; the draft and final PDFs list the source files; the Calculation logic tab has a new step D0 showing the worked conversion. Warns about non-A30/32/34 files, duplicate products and a run date that differs from the worksheet date.</li>
+        <li><b>v17 · 5 Nov 2026</b>Drafts are now PDFs: Save Draft writes a PDF marked DRAFT on every page. New Load from PDF refills the worksheet from a draft or final PDF (exact for v17 PDFs, from printed values for v15/v16). Submit replaces the draft PDF with the final one where the browser allows. Removed the in-browser draft list, Export / Import Log (.json), Export Log (.csv) and the CSV saved on Submit. Older browser drafts can still be opened once. Clear Log moved to the Summary Log header. No change to any calculation.</li>
+        <li><b>v16 · 5 Nov 2026</b>Added the Calculation logic tab and an ƒx button on each section that opens that section’s logic in a side panel. Every step shows the formula in plain words and with the current numbers, and is checked against an independent recalculation. Documents the STD check, the XLOI sample-mass column and the worksheet vs PDF stamp rules. Purpose, context and this history are now embedded. Removed draft names and a log entry that a browser “Save page as” had written into the file, and restored the web-font link. No change to any calculation, storage or export.</li>
+        <li><b>v15 and earlier</b>History was not embedded in earlier files. In place by v15: drafts and Summary Log in localStorage, JSON export / import with de-duplication, tidy CSV export for Power BI, native Save As dialog, PDF on submit, editable ASCRM certified values, iPad and iPhone 16 Pro Max layouts.</li>
+      </ul>
+    </article>
+  </section>
+</div><!-- /view-logic -->
+
+<script type="application/json" id="tool-meta">
+{
+  "tool": "ISO 2596 Parcher LOI Worksheet",
+  "file": "parcher_loi_tool_v19.html",
+  "version": 19,
+  "owner": "Ming, PMLB (Port Hedland Mining Laboratory)",
+  "source_workbook": "Parcher_plus_LOI_v2.xlsm",
+  "purpose": "Digitised ISO 2596 Parcher LOI worksheet: hygroscopic moisture (blanks, STD 28.5-29.2%, A30/A32/A34 duplicates), manual XLOI, manual LOI on a dry basis, and a +/-5% relative comparison of manual vs TGA (auto) LOI.",
+  "formulas": {
+    "A_blank": "B = F - D; B_avg = (B1 + B2) / 2",
+    "A_dry_mass": "G = F - D (shown only when D, E, F and B_avg exist)",
+    "A_moisture": "H = (E - (G - B_avg)) / E * 100",
+    "A_std_check": "Pass if 28.5 <= H <= 29.2 (each STD; does not affect the stamp)",
+    "A_parcher_h2o": "W = (H1 + H2) / 2",
+    "B_sum": "S = C + D",
+    "B_xloi": "X = (S - F) / (S - C) * 100 = (C + D - F) / D * 100",
+    "C_manual_loi": "LOI = (X_avg - W) * 100 / (100 - W)",
+    "D_tga_csv": "fields: 0 id, 1 run ddmmyyHHMM, 2 SW, 3 CW, 4 crucible no, 5-12 WT105_IN..WT1000_OUT, 13-16 CF105..CF1000; M = SW*WT105_IN/(SW+CW); autoH2O = 100*(WT105_IN-WT105_OUT-CF105)/M; autoLOI = 100*(WT105_OUT-WT1000_OUT-CF1000)/M*100/(100-autoH2O); rounded 4 dp",
+    "D_result": "Pass if |LOI_manual - LOI_auto| <= 0.05 * LOI_manual",
+    "stamp_screen": "PENDING if no results; FAIL if any Fail; else PASS (pending ignored)",
+    "stamp_pdf": "PASS only if all three Pass; otherwise FAIL (PENDING if no results)"
+  },
+  "storage_keys": ["parcher_loi_summary_log", "parcher_loi_certified_values", "parcher_loi_device_mode", "parcher_loi_theme", "parcher_loi_drafts (legacy, read-only)"],
+  "drafts": "Draft and final PDFs embed the worksheet state in the PDF Subject as PLOI1:<base64 UTF-8 JSON {tool:\"parcher_loi\", v, status, savedAt, state}>.",
+  "changelog": [
+    {"version": 19, "date": "2026-11-08", "changes": "Section B column 'Crucible + Sample' renamed 'Sample Only'; light/dark toggle (dark default, saved as parcher_loi_theme)."},
+    {"version": 18, "date": "2026-11-08", "changes": "Section D: type or upload TGA801 run CSVs (Auto H2O = LOI105, Auto LOI = LOI1000); CSV/typed tags; PDF lists sources; Logic step D0."},
+    {"version": 17, "date": "2026-11-05", "changes": "Drafts saved as DRAFT-marked PDFs; Load from PDF; Submit replaces the draft PDF; removed browser draft list, JSON/CSV log export/import and CSV on submit."},
+    {"version": 16, "date": "2026-11-05", "changes": "Calculation logic tab + per-section ƒx side panel with live worked examples and independent recalculation check; embedded purpose/context/changelog; removed browser-saved runtime data from file; restored Google Fonts link. No calculation changes."},
+    {"version": 15, "date": null, "changes": "History not embedded in v15 or earlier files."}
+  ]
+}
+</script>
+
   <div style="text-align:center; font-family:var(--mono); font-size:11px; color:var(--ink-dim); padding:16px 0 4px;">
-    Parcher LOI Worksheet Tool &mdash; v15
+    Parcher LOI Worksheet Tool — v19
   </div>
 
 </div>
+
+<div class="lbackdrop" id="logicBackdrop"></div>
+<aside class="lpanel" id="logicPanel" role="dialog" aria-modal="false" aria-labelledby="logicPanelTitle" aria-hidden="true">
+  <div class="lpanel-head">
+    <span class="fxmark" aria-hidden="true">ƒx</span>
+    <h2 id="logicPanelTitle">How Section A is calculated</h2>
+    <button type="button" class="btn-ghost" id="logicPanelClose">Close</button>
+  </div>
+  <div class="lpanel-body" id="logicPanelBody"></div>
+  <div class="lpanel-foot">
+    <button type="button" class="btn-ghost" id="logicPanelFull">Open full calculation logic</button>
+  </div>
+</aside>
 
 <!-- jsPDF + autotable, bundled inline so PDF export works fully offline -->
 <script>
@@ -785,9 +1296,9 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var n,r,i,a,
       A34:[ {C:null,D:null,F:null}, {C:null,D:null,F:null} ],
     },
     D:{
-      A30:{autoH2O:null, autoLOI:null},
-      A32:{autoH2O:null, autoLOI:null},
-      A34:{autoH2O:null, autoLOI:null},
+      A30:{autoH2O:null, autoLOI:null, src:null},
+      A32:{autoH2O:null, autoLOI:null, src:null},
+      A34:{autoH2O:null, autoLOI:null, src:null},
     }
   };
 
@@ -969,7 +1480,7 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var n,r,i,a,
     let rows = '';
     GROUPS.forEach(g=>{
       rows += `<tr>
-        <td class="rowlabel">${g}</td>
+        <td class="rowlabel">${g}<span class="srctag" id="${uid('Out','D',g,'src')}"></span></td>
         <td class="computed-cell" id="${uid('Out','D',g,'manualLOI')}">&mdash;</td>
         <td>${inputCell(`D.${g}.autoH2O`, uid('In','D',g,'autoH2O'))}</td>
         <td>${inputCell(`D.${g}.autoLOI`, uid('In','D',g,'autoLOI'))}</td>
@@ -1078,6 +1589,8 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var n,r,i,a,
   function renderAll(){
     const calc = computeAll();
     updateComputed(calc);
+    renderTgaTags();   // v18: CSV / typed tag under each Section D product
+    renderLogic(calc); // v16: keeps the Calculation logic tab / ƒx panel live (read-only)
     return calc;
   }
 
@@ -1099,6 +1612,7 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var n,r,i,a,
         const v = parseNumericInput(e.target.value);
         if(v===undefined) return; // invalid keystroke (stray letters etc) — ignore, leave field as-is
         setByPath(state, path, v);
+        if(/^D\.A3\d\.auto/.test(path)){ const g = path.split('.')[1]; if(state.D[g]) state.D[g].src = null; } // v18: typed over → no longer from CSV
         markDirty();
         renderAll(); // only updates computed cells; this input is left untouched
       });
@@ -1141,7 +1655,7 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var n,r,i,a,
           A32:{autoH2O:null,autoLOI:null},
           A34:{autoH2O:null,autoLOI:null} }
     };
-    currentDraftId = null;
+    currentDraftId = null; draftHandle = null; draftFileName = null; tgaMsg([]);
     loadHeaderIntoForm();
     populateInputsFromState();
     renderAll();
@@ -1181,72 +1695,258 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var n,r,i,a,
     }
   }
 
-  function loadDraftsList(){ return lsGet(LS_DRAFTS, []); }
-  function saveDraftsList(list){ return lsSet(LS_DRAFTS, list); }
   function loadLog(){ return lsGet(LS_LOG, []); }
   function saveLog(list){ return lsSet(LS_LOG, list); }
   function loadCertifiedValues(){ return lsGet(LS_REF, {A30:9.24, A32:2.90, A34:4.76}); }
   function saveCertifiedValues(v){ return lsSet(LS_REF, v); }
 
-  function refreshDraftDropdown(){
-    const select = document.getElementById('draftSelect');
-    const list = loadDraftsList();
-    select.innerHTML = '<option value="">— Load a saved draft —</option>' +
-      list.map(d=>`<option value="${d.id}">${d.date||'(no date)'} · ${d.workorder||'no WO'} · ${d.analyst||'?'}</option>`).join('');
+  // =====================================================================
+  // ---------- v17 · drafts are PDFs ----------
+  // Save Draft writes a PDF marked DRAFT on every page. Load from PDF refills the
+  // worksheet from a draft or final PDF made by this tool. Submit writes the final
+  // PDF back INTO the draft file it came from (Chrome/Edge on a PC, where the
+  // browser can keep a handle to the file); elsewhere it saves a new final PDF and
+  // reminds you to delete the draft. Every v17 PDF also carries an exact copy of
+  // the worksheet data in its Subject field ("PLOI1:" + base64 JSON), so a refill
+  // is lossless; v15/v16 PDFs are read from their printed values instead.
+  // =====================================================================
+  let draftHandle = null;      // FileSystemFileHandle of the draft PDF in use (Chrome/Edge only)
+  let draftFileName = null;    // name of the draft PDF in use, for reminders
+  const safeName = s => (s||'').replace(/[^a-z0-9]/gi,'');
+  const pdfName = draft => `Parcher_LOI_${safeName(state.workorder)||'noWO'}_${state.date||'nodate'}${draft?'_DRAFT':''}.pdf`;
+
+  function blankState(){
+    return {
+      date:'', analyst:'', workorder:'',
+      A:{ blank:[{C:1,D:null,F:null},{C:2,D:null,F:null}],
+          std:[{C:3,D:null,E:null,F:null},{C:4,D:null,E:null,F:null}],
+          A30:[{C:5,D:null,E:null,F:null},{C:6,D:null,E:null,F:null}],
+          A32:[{C:7,D:null,E:null,F:null},{C:8,D:null,E:null,F:null}],
+          A34:[{C:9,D:null,E:null,F:null},{C:10,D:null,E:null,F:null}] },
+      B:{ A30:[{C:null,D:null,F:null},{C:null,D:null,F:null}],
+          A32:[{C:null,D:null,F:null},{C:null,D:null,F:null}],
+          A34:[{C:null,D:null,F:null},{C:null,D:null,F:null}] },
+      D:{ A30:{autoH2O:null,autoLOI:null,src:null}, A32:{autoH2O:null,autoLOI:null,src:null}, A34:{autoH2O:null,autoLOI:null,src:null} }
+    };
+  }
+  // Copy only known fields from an untrusted source (file / old draft) into a clean state.
+  function mergeState(src){
+    const s = blankState();
+    src = src || {};
+    const n = v => (typeof v==='number' && isFinite(v)) ? v : null;
+    ['date','analyst','workorder'].forEach(k => { if(typeof src[k]==='string') s[k] = src[k].slice(0,80); });
+    ['blank','std'].concat(GROUPS).forEach(k => s.A[k].forEach((r,i) => {
+      const o = (src.A && src.A[k] && src.A[k][i]) || {};
+      ['D','E','F'].forEach(f => { if(f in r) r[f] = n(o[f]); });
+    }));
+    GROUPS.forEach(g => {
+      s.B[g].forEach((r,i) => { const o = (src.B && src.B[g] && src.B[g][i]) || {}; ['C','D','F'].forEach(f => r[f] = n(o[f])); });
+      const o = (src.D && src.D[g]) || {};
+      s.D[g].autoH2O = n(o.autoH2O); s.D[g].autoLOI = n(o.autoLOI); s.D[g].src = cleanSrc(o.src);
+    });
+    return s;
+  }
+  function applyState(s){
+    state = s;
+    tgaMsg([]);
+    loadHeaderIntoForm();
+    populateInputsFromState();
+    renderAll();
   }
 
-  document.getElementById('saveDraftBtn').addEventListener('click', ()=>{
-    const list = loadDraftsList();
-    const id = currentDraftId || ('d_'+Date.now());
-    const draftRecord = { id, date:state.date, analyst:state.analyst, workorder:state.workorder,
-                           savedAt:new Date().toISOString(), state: JSON.parse(JSON.stringify(state)) };
-    const idx = list.findIndex(d=>d.id===id);
-    if(idx>=0) list[idx]=draftRecord; else list.push(draftRecord);
-    if(saveDraftsList(list)){
-      currentDraftId = id;
-      refreshDraftDropdown();
-      document.getElementById('draftSelect').value = id;
-      markClean('Draft saved');
-      setStatus('Draft saved on this machine');
-    } else {
-      setStatus('Save failed — try again', false);
+  async function ensureWrite(handle){
+    try{
+      const o = {mode:'readwrite'};
+      if((await handle.queryPermission(o))==='granted') return true;
+      return (await handle.requestPermission(o))==='granted';
+    }catch(e){ return false; }
+  }
+  async function writeHandle(handle, blob){
+    const w = await handle.createWritable();
+    await w.write(blob);
+    await w.close();
+  }
+
+  // ---------- Save Draft → DRAFT PDF ----------
+  document.getElementById('saveDraftBtn').addEventListener('click', async ()=>{
+    // ask for edit permission first, while the click still counts as a user action
+    const canWrite = draftHandle ? await ensureWrite(draftHandle) : false;
+    const blob = buildPDF(computeAll(), {draft:true});
+    if(!blob){ setStatus('Draft PDF could not be made — try again', false); return; }
+    if(draftHandle && canWrite){
+      try{
+        await writeHandle(draftHandle, blob);
+        draftFileName = draftHandle.name;
+        markClean(`Draft saved — ${draftHandle.name}`);
+        setStatus(`Draft updated in ${draftHandle.name}`);
+        return;
+      }catch(e){ console.warn('Could not write to the open draft, asking where to save instead', e); }
+    }
+    const out = await saveFileWithDialog(blob, pdfName(true), 'application/pdf', 'PDF file', ['.pdf']);
+    if(out.result==='saved' || out.result==='downloaded'){
+      draftHandle = out.handle || null;
+      draftFileName = out.handle ? out.handle.name : pdfName(true);
+      markClean(`Draft saved — ${draftFileName}`);
+      setStatus(out.result==='saved' ? `Draft saved as ${draftFileName}` : `Draft PDF downloaded — ${draftFileName}`);
     }
   });
 
-  document.getElementById('loadDraftBtn').addEventListener('click', ()=>{
-    const id = document.getElementById('draftSelect').value;
-    if(!id) return;
-    const list = loadDraftsList();
-    const rec = list.find(d=>d.id===id);
-    if(rec){
-      state = rec.state;
-      currentDraftId = id;
-      loadHeaderIntoForm();
-      populateInputsFromState();
-      renderAll();
-      markClean('Draft loaded');
-      setStatus('Draft loaded');
+  // ---------- Load from PDF ----------
+  function bytesToLatin1(bytes){
+    let s = '';
+    for(let i=0; i<bytes.length; i+=8192) s += String.fromCharCode.apply(null, bytes.subarray(i, i+8192));
+    return s;
+  }
+  function parseParcherPdf(bytes){
+    const s = bytesToLatin1(bytes);
+
+    // 1) exact data embedded by v17 and later
+    const m = s.match(/\/Subject \((PLOI1:[A-Za-z0-9+\/=]+)\)/);
+    if(m){
+      try{
+        const bin = atob(m[1].slice(6));
+        const u = new Uint8Array(bin.length);
+        for(let i=0; i<bin.length; i++) u[i] = bin.charCodeAt(i);
+        const obj = JSON.parse(new TextDecoder().decode(u));
+        if(obj && obj.tool==='parcher_loi' && obj.state){
+          return { status: obj.status==='draft' ? 'draft' : 'final', state: mergeState(obj.state), exact:true, notFound:0 };
+        }
+      }catch(e){ console.warn('Embedded data unreadable, falling back to printed values', e); }
     }
+
+    // 2) printed values — PDFs from v15/v16 (always final)
+    const toks = [];
+    const re = /\(((?:\\.|[^\\)])*)\) Tj/g;
+    let t;
+    while((t = re.exec(s))) toks.push(t[1].replace(/\\([()\\])/g, '$1'));
+    const iA = toks.indexOf('A: Product'), iB = toks.indexOf('B: Product');
+    if(iA<0 || !toks.some(x => x.indexOf('Parcher')>=0)) return null;
+
+    const val = x => {
+      if(x===undefined) return null;
+      const c = x.replace('%','').trim();
+      if(c==='' || c==='-' || c==='\x97' || c==='\u2014') return null;
+      const v = parseFloat(c);
+      return isNaN(v) ? null : v;
+    };
+    const head = p => { const h = toks.find(x => x.indexOf(p)===0); if(!h) return ''; const v = h.slice(p.length).trim(); return v==='-' ? '' : v; };
+    let notFound = 0;
+    const cells = (label, from, to) => {
+      const k = toks.indexOf(label, from);
+      if(k<0 || (to>=0 && k>to)) { notFound++; return null; }
+      return toks.slice(k+1, k+8);
+    };
+
+    const st = blankState();
+    st.date = head('Date: '); st.analyst = head('Analyst: '); st.workorder = head('Work Order: ');
+    const endA = iB>=0 ? iB : toks.length;
+    [0,1].forEach(i => {
+      const c = cells(`Blank ${i+1}`, iA, endA);
+      if(c){ st.A.blank[i].D = val(c[1]); st.A.blank[i].F = val(c[3]); }
+      const d = cells(`STD ${i+1}`, iA, endA);
+      if(d){ st.A.std[i].D = val(d[1]); st.A.std[i].E = val(d[2]); st.A.std[i].F = val(d[3]); }
+    });
+    GROUPS.forEach(g => [0,1].forEach(i => {
+      const c = cells(`${g}-${i+1}`, iA, endA);
+      if(c){ st.A[g][i].D = val(c[1]); st.A[g][i].E = val(c[2]); st.A[g][i].F = val(c[3]); }
+    }));
+    if(iB>=0){
+      GROUPS.forEach(g => [0,1].forEach(i => {
+        const c = cells(`${g}-${i+1}`, iB, -1);
+        if(c){ st.B[g][i].C = val(c[0]); st.B[g][i].D = val(c[1]); st.B[g][i].F = val(c[3]); }
+      }));
+      GROUPS.forEach(g => {
+        const c = cells(g, iB, -1);
+        if(c){ st.D[g].autoH2O = val(c[3]); st.D[g].autoLOI = val(c[4]); }
+      });
+    } else { notFound += 9; }
+    return { status:'final', state:st, exact:false, notFound };
+  }
+
+  async function loadFromPdfFile(file, handle){
+    let parsed = null;
+    try{ parsed = parseParcherPdf(new Uint8Array(await file.arrayBuffer())); }catch(e){ console.error(e); }
+    if(!parsed){
+      setStatus(`Couldn’t read ${file.name} — it wasn’t made by this tool, or another app re-saved it`, false);
+      return;
+    }
+    if(draftDirty && !confirm(`Load ${file.name}?\n\nUnsaved changes on screen will be lost.`)) return;
+    if(parsed.status==='final' && !confirm(`${file.name} is a FINAL worksheet that has already been submitted.\n\nLoad it anyway? Submitting it again replaces the Summary Log entry and saves a new final PDF.`)) return;
+    applyState(parsed.state);
+    if(parsed.status==='draft'){ draftHandle = handle || null; draftFileName = file.name; }
+    else { draftHandle = null; draftFileName = null; }
+    markClean(`${parsed.status==='draft' ? 'Draft' : 'Final'} loaded — ${file.name}`);
+    let note = parsed.exact ? '' : ' · read from printed values, so Auto H₂O and Auto LOI are to 2 dp';
+    if(parsed.notFound) note += ` · ${parsed.notFound} row${parsed.notFound===1?'':'s'} not found — check the worksheet`;
+    setStatus(`Loaded ${parsed.status==='draft' ? 'draft' : 'final'} PDF${note}`, !parsed.notFound);
+  }
+
+  document.getElementById('loadPdfBtn').addEventListener('click', async ()=>{
+    if(window.showOpenFilePicker){
+      let h;
+      try{
+        [h] = await window.showOpenFilePicker({ multiple:false, types:[{ description:'Parcher LOI PDF', accept:{'application/pdf':['.pdf']} }] });
+      }catch(e){
+        if(e && e.name==='AbortError') return;
+        document.getElementById('loadPdfFile').click();   // picker blocked — use the classic file chooser
+        return;
+      }
+      await loadFromPdfFile(await h.getFile(), h);
+      return;
+    }
+    document.getElementById('loadPdfFile').click();
+  });
+  document.getElementById('loadPdfFile').addEventListener('change', async e => {
+    const f = e.target.files[0];
+    e.target.value = '';
+    if(f) await loadFromPdfFile(f, null);
   });
 
-  document.getElementById('deleteDraftBtn').addEventListener('click', ()=>{
-    const id = document.getElementById('draftSelect').value;
-    if(!id) return;
-    if(!confirm('Delete this saved draft? This cannot be undone.')) return;
-    const list = loadDraftsList();
-    saveDraftsList(list.filter(d=>d.id!==id));
-    refreshDraftDropdown();
-    if(currentDraftId===id) currentDraftId=null;
-    setStatus('Draft deleted');
+  // ---------- old browser drafts (v16 and earlier) ----------
+  // Drafts used to live in this browser only. They are no longer created; this
+  // strip lets you open any that are left, then Save Draft keeps them as a PDF.
+  function refreshLegacyDrafts(){
+    const list = lsGet(LS_DRAFTS, []);
+    const bar = document.getElementById('legacyDrafts');
+    if(!list.length){ bar.hidden = true; return; }
+    bar.hidden = false;
+    document.getElementById('legacyMsg').textContent = `${list.length} older browser draft${list.length===1?'':'s'} found — open one, then Save Draft to keep it as a PDF`;
+    const esc = x => String(x||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    document.getElementById('legacySelect').innerHTML = list.map(d =>
+      `<option value="${esc(d.id)}">${esc(d.date)||'(no date)'} · ${esc(d.workorder)||'no WO'} · ${esc(d.analyst)||'?'}</option>`).join('');
+  }
+  document.getElementById('legacyLoadBtn').addEventListener('click', ()=>{
+    const id = document.getElementById('legacySelect').value;
+    const rec = lsGet(LS_DRAFTS, []).find(d => d.id===id);
+    if(!rec) return;
+    if(draftDirty && !confirm('Open this old draft? Unsaved changes on screen will be lost.')) return;
+    applyState(mergeState(rec.state));
+    draftHandle = null; draftFileName = null;
+    markDirty();
+    setStatus('Old browser draft opened — press Save Draft to keep it as a PDF');
+  });
+  document.getElementById('legacyClearBtn').addEventListener('click', ()=>{
+    if(!confirm('Remove all older browser drafts from this browser? Save any you need as a PDF first — this cannot be undone.')) return;
+    try{ localStorage.removeItem(LS_DRAFTS); }catch(e){}
+    refreshLegacyDrafts();
+    setStatus('Older browser drafts removed');
   });
 
+  // ---------- Submit → FINAL PDF ----------
   document.getElementById('submitBtn').addEventListener('click', async ()=>{
     const calc = computeAll();
     if(!state.date || !state.workorder || !state.analyst){
       alert('Please fill in Date, Analyst and Work Order Number before submitting.');
       return;
     }
-    if(!confirm('Submit this worksheet to the Summary Log? It will replace the current entry there.')) return;
+    // ask for edit permission on the draft file first, while the click still counts
+    const canWrite = draftHandle ? await ensureWrite(draftHandle) : false;
+    const replacing = !!(draftHandle && canWrite);
+    const msg = replacing
+      ? `Submit this worksheet?\n\nThe draft file “${draftHandle.name}” will be replaced by the final PDF, and the Summary Log entry will be replaced.`
+      : 'Submit this worksheet?\n\nA final PDF will be saved and the Summary Log entry will be replaced.';
+    if(!confirm(msg)) return;
+
     const record = {
       date: state.date, workorder: state.workorder, analyst: state.analyst,
       submittedAt: new Date().toISOString(),
@@ -1260,45 +1960,81 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var n,r,i,a,
       record.passFail[g] = calc.groupsD[g].result;
     });
     const log = [record]; // Summary Log keeps only the most recent submission — overwrite, don't append
-    if(saveLog(log)){
-      renderLogTable(log);
-      const pdfResult = await generatePDF(calc);
-      const csvContent = buildLogCsvContent(log);
-      const csvResult = await saveFileWithDialog(csvContent, 'parcher_loi_summary_log.csv', 'text/csv', 'CSV file', ['.csv']);
+    if(!saveLog(log)){ setStatus('Submit failed — try again', false); return; }
+    renderLogTable(log);
 
-      const describe = (label, result) => {
-        if(result==='saved') return `${label} saved`;
-        if(result==='downloaded') return `${label} downloaded`;
-        if(result==='cancelled') return `${label} skipped`;
-        return `${label} failed`;
-      };
-      const pdfOk = pdfResult==='saved' || pdfResult==='downloaded';
-      const csvOk = csvResult==='saved' || csvResult==='downloaded';
-      const parts = [describe('PDF', pdfResult), describe('CSV', csvResult)];
-      setStatus(`Submitted — ${parts.join(', ')}`, pdfOk && csvOk);
-      markClean('Submitted');
-    } else {
-      setStatus('Submit failed — try again', false);
+    const blob = buildPDF(calc, {draft:false});
+    if(!blob){ setStatus('Submitted to the log, but the PDF could not be made — press Submit again', false); return; }
+    let outcome = null, ok = false;
+    if(replacing){
+      try{
+        await writeHandle(draftHandle, blob);
+        const finalName = pdfName(false);
+        let renamed = false;
+        if(typeof draftHandle.move==='function' && draftHandle.name!==finalName){
+          try{ await draftHandle.move(finalName); renamed = true; }catch(e){ console.warn('Rename not allowed', e); }
+        }
+        outcome = renamed ? `final PDF replaced the draft, now ${finalName}`
+                          : `final PDF written into ${draftHandle.name} — rename it to drop “_DRAFT”`;
+        ok = true;
+      }catch(e){ console.warn('Could not replace the draft file, saving a new one instead', e); }
     }
+    if(!outcome){
+      const out = await saveFileWithDialog(blob, pdfName(false), 'application/pdf', 'PDF file', ['.pdf']);
+      if(out.result==='saved' || out.result==='downloaded'){
+        ok = true;
+        outcome = `final PDF ${out.result}` + (draftFileName ? ` — delete the draft file ${draftFileName}` : '');
+      } else {
+        outcome = out.result==='cancelled' ? 'PDF skipped — press Submit again to save it' : 'PDF failed';
+      }
+    }
+    draftHandle = null; draftFileName = null;
+    setStatus(`Submitted — ${outcome}`, ok);
+    markClean('Submitted');
   });
 
-  // ---------- PDF generation (jsPDF, bundled inline for offline use) ----------
-  async function generatePDF(calc){
+  // ---------- PDF builder (jsPDF, bundled inline for offline use) ----------
+  function encodePayload(status){
+    const json = JSON.stringify({ tool:'parcher_loi', v:19, status, savedAt:new Date().toISOString(), state });
+    const u = new TextEncoder().encode(json);
+    let bin = '';
+    for(let i=0; i<u.length; i++) bin += String.fromCharCode(u[i]);
+    return 'PLOI1:' + btoa(bin);
+  }
+
+  function buildPDF(calc, opts){
+    const draft = !!(opts && opts.draft);
     try{
       const { jsPDF } = window.jspdf;
       const doc = new jsPDF({ unit:'pt', format:'a4' });
+      const pageW = doc.internal.pageSize.getWidth(), pageH = doc.internal.pageSize.getHeight();
       const marginX = 40;
       let y = 44;
+      doc.setProperties({
+        title: `Parcher LOI ${draft ? 'DRAFT' : 'FINAL'} ${state.workorder||''}`.trim(),
+        subject: encodePayload(draft ? 'draft' : 'final'),
+        creator: 'Parcher LOI Worksheet Tool v19'
+      });
 
       doc.setFont('helvetica','bold'); doc.setFontSize(15);
       doc.text('ISO 2596 Parcher \u2014 Loss on Ignition Worksheet', marginX, y);
       y += 16;
       doc.setFont('helvetica','normal'); doc.setFontSize(9); doc.setTextColor(90,100,100);
-      doc.text('PMLB', marginX, y);
+      doc.text(`PMLB \u00b7 Parcher LOI Worksheet Tool v19 \u00b7 ${draft ? 'DRAFT' : 'FINAL'}`, marginX, y);
       doc.setTextColor(0,0,0);
-      y += 18;
+      y += 12;
 
-      doc.setFontSize(10);
+      if(draft){
+        doc.setFillColor(247,148,30);
+        doc.rect(marginX, y, pageW - marginX*2, 22, 'F');
+        doc.setFont('helvetica','bold'); doc.setFontSize(10.5); doc.setTextColor(26,18,4);
+        doc.text(`DRAFT \u2014 awaiting finalisation \u00b7 saved ${new Date().toLocaleString()}`, marginX+10, y+14.5);
+        doc.setTextColor(0,0,0);
+        y += 22;
+      }
+      y += 14;
+
+      doc.setFont('helvetica','normal'); doc.setFontSize(10);
       doc.text(`Date: ${state.date||'-'}`, marginX, y);
       doc.text(`Analyst: ${state.analyst||'-'}`, marginX+180, y);
       doc.text(`Work Order: ${state.workorder||'-'}`, marginX+360, y);
@@ -1306,6 +2042,7 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var n,r,i,a,
 
       const pctOr = v => v===null||v===undefined ? '\u2014' : v.toFixed(2)+'%';
       const numOr = v => v===null||v===undefined ? '\u2014' : v.toFixed(4);
+      const head = {fillColor:[36,59,69]};
 
       // Section A
       const aRows = [];
@@ -1327,8 +2064,7 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var n,r,i,a,
       doc.autoTable({
         startY:y, margin:{left:marginX,right:marginX},
         head:[['A: Product','Crucible','Empty (g)','Sample (g)','Dry+Cru (g)','% Moisture','Check']],
-        body:aRows, styles:{fontSize:7.5, cellPadding:2.5}, headStyles:{fillColor:[36,59,69]},
-        theme:'grid'
+        body:aRows, styles:{fontSize:7.5, cellPadding:2.5}, headStyles:head, theme:'grid'
       });
       y = doc.lastAutoTable.finalY + 14;
 
@@ -1343,9 +2079,8 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var n,r,i,a,
       });
       doc.autoTable({
         startY:y, margin:{left:marginX,right:marginX},
-        head:[['B: Product','Empty Cru','Cru+Sample','Sum','Cru+Dry','Manual XLOI %']],
-        body:bRows, styles:{fontSize:7.5, cellPadding:2.5}, headStyles:{fillColor:[36,59,69]},
-        theme:'grid'
+        head:[['B: Product','Empty Cru','Sample','Sum','Cru+Dry','Manual XLOI %']],
+        body:bRows, styles:{fontSize:7.5, cellPadding:2.5}, headStyles:head, theme:'grid'
       });
       y = doc.lastAutoTable.finalY + 14;
 
@@ -1358,31 +2093,52 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var n,r,i,a,
       doc.autoTable({
         startY:y, margin:{left:marginX,right:marginX},
         head:[['Product','Avg Manual XLOI','Avg Parcher H2O','Manual LOI','Auto H2O','Auto LOI','Certified (ref.)','Result']],
-        body:dRows, styles:{fontSize:7.5, cellPadding:2.5}, headStyles:{fillColor:[36,59,69]},
-        theme:'grid'
+        body:dRows, styles:{fontSize:7.5, cellPadding:2.5}, headStyles:head, theme:'grid'
       });
-      y = doc.lastAutoTable.finalY + 20;
+      {
+        const srcText = 'Auto values \u2014 ' + GROUPS.map(g=>{
+          const s = state.D[g] && state.D[g].src, d = calc.groupsD[g];
+          return `${g}: ${s ? `${s.file} (run ${s.run})` : ((d.autoH2O!==null || d.autoLOI!==null) ? 'typed' : '-')}`;
+        }).join(' \u00b7 ');
+        const lines = doc.splitTextToSize(srcText, pageW - marginX*2);
+        doc.setFont('helvetica','normal'); doc.setFontSize(7.5); doc.setTextColor(90,100,100);
+        doc.text(lines, marginX, doc.lastAutoTable.finalY + 12);
+        doc.setTextColor(0,0,0);
+        y = doc.lastAutoTable.finalY + 20 + lines.length*9;
+      }
+      if(y > pageH - 50){ doc.addPage(); y = 60; }
 
       const allPass = GROUPS.every(g=>calc.groupsD[g].result==='Pass');
       const anyResult = GROUPS.some(g=>calc.groupsD[g].result);
-      const stampText = !anyResult ? 'PENDING' : (allPass ? 'PASS' : 'FAIL');
-      const stampColor = !anyResult ? [150,150,150] : (allPass ? [47,125,90] : [168,58,50]);
+      const resultText = !anyResult ? 'PENDING' : (allPass ? 'PASS' : 'FAIL');
+      const stampText = draft ? 'DRAFT' : resultText;
+      const stampColor = draft ? [217,122,10] : (!anyResult ? [150,150,150] : (allPass ? [47,125,90] : [168,58,50]));
       doc.setDrawColor(...stampColor); doc.setTextColor(...stampColor);
       doc.setFont('helvetica','bold'); doc.setFontSize(16);
       doc.rect(marginX, y-14, 90, 22);
       doc.text(stampText, marginX+10, y+2);
       doc.setTextColor(0,0,0);
-
       doc.setFont('helvetica','normal'); doc.setFontSize(8);
-      doc.text(`Submitted ${new Date().toLocaleString()}`, marginX+110, y+2);
+      doc.text(draft ? `Not finalised \u00b7 provisional result ${resultText} \u00b7 saved ${new Date().toLocaleString()}`
+                     : `Submitted ${new Date().toLocaleString()}`, marginX+110, y+2);
 
-      const fname = `Parcher_LOI_${(state.workorder||'noWO').replace(/[^a-z0-9]/gi,'')}_${state.date||'nodate'}.pdf`;
-      const pdfBlob = doc.output('blob');
-      const result = await saveFileWithDialog(pdfBlob, fname, 'application/pdf', 'PDF file', ['.pdf']);
-      return result; // 'saved' | 'downloaded' | 'cancelled'
+      // DRAFT watermark on every page
+      if(draft){
+        const pages = doc.getNumberOfPages();
+        for(let p=1; p<=pages; p++){
+          doc.setPage(p);
+          doc.saveGraphicsState();
+          doc.setGState(new doc.GState({opacity:0.10}));
+          doc.setFont('helvetica','bold'); doc.setFontSize(120); doc.setTextColor(247,148,30);
+          doc.text('DRAFT', pageW*0.18, pageH*0.70, {angle:35});
+          doc.restoreGraphicsState();
+        }
+        doc.setTextColor(0,0,0);
+      }
+      return doc.output('blob');
     }catch(err){
       console.error('PDF generation failed:', err);
-      return 'failed';
+      return null;
     }
   }
 
@@ -1424,9 +2180,9 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var n,r,i,a,
         const writable = await handle.createWritable();
         await writable.write(content);
         await writable.close();
-        return 'saved';
+        return {result:'saved', handle};
       }catch(err){
-        if(err && err.name === 'AbortError') return 'cancelled';
+        if(err && err.name === 'AbortError') return {result:'cancelled', handle:null};
         console.warn('Save dialog failed, falling back to direct download:', err);
         // fall through to the classic download below
       }
@@ -1439,90 +2195,14 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var n,r,i,a,
     document.body.appendChild(a);
     a.click();
     a.remove();
-    URL.revokeObjectURL(url);
-    return 'downloaded';
+    setTimeout(()=>URL.revokeObjectURL(url), 4000);
+    return {result:'downloaded', handle:null};
   }
-
-  document.getElementById('exportLogBtn').addEventListener('click', async ()=>{
-    const log = loadLog();
-    const content = JSON.stringify({ exportedAt:new Date().toISOString(), entries:log }, null, 2);
-    const result = await saveFileWithDialog(content, 'parcher_loi_summary_log.json', 'application/json', 'JSON file', ['.json']);
-    if(result==='saved') setStatus('Log saved');
-    else if(result==='downloaded') setStatus('Log downloaded to your Downloads folder');
-    // 'cancelled' — user backed out of the dialog, leave status as-is
-  });
-
-  function csvEscape(v){
-    if(v===null || v===undefined) return '';
-    const s = String(v);
-    return /[",\n]/.test(s) ? '"' + s.replace(/"/g,'""') + '"' : s;
-  }
-
-  function buildLogCsvContent(log){
-    const header = ['Date','WorkOrder','Analyst','SubmittedAt','Product','ParcherH2O_pct','ManualLOI_pct','AutoH2O_pct','AutoLOI_pct','PassFail'];
-    const rows = [header.join(',')];
-    log.forEach(r=>{
-      GROUPS.forEach(g=>{
-        rows.push([
-          csvEscape(r.date), csvEscape(r.workorder), csvEscape(r.analyst), csvEscape(r.submittedAt),
-          csvEscape(g),
-          csvEscape(r.parcherH2O[g]!==null && r.parcherH2O[g]!==undefined ? r.parcherH2O[g].toFixed(4) : ''),
-          csvEscape(r.manualLOI[g]!==null && r.manualLOI[g]!==undefined ? r.manualLOI[g].toFixed(4) : ''),
-          csvEscape(r.autoH2O[g]!==null && r.autoH2O[g]!==undefined ? r.autoH2O[g].toFixed(4) : ''),
-          csvEscape(r.autoLOI[g]!==null && r.autoLOI[g]!==undefined ? r.autoLOI[g].toFixed(4) : ''),
-          csvEscape(r.passFail[g]||'')
-        ].join(','));
-      });
-    });
-    return rows.join('\r\n');
-  }
-
-  document.getElementById('exportCsvBtn').addEventListener('click', async ()=>{
-    const log = loadLog();
-    if(!log.length){ setStatus('Log is empty — nothing to export'); return; }
-    const content = buildLogCsvContent(log);
-    const result = await saveFileWithDialog(content, 'parcher_loi_summary_log.csv', 'text/csv', 'CSV file', ['.csv']);
-    if(result==='saved') setStatus('CSV saved — ready for Power BI');
-    else if(result==='downloaded') setStatus('CSV downloaded to your Downloads folder');
-  });
-
-  document.getElementById('importLogBtn').addEventListener('click', ()=>{
-    document.getElementById('importLogFile').click();
-  });
-
-  document.getElementById('importLogFile').addEventListener('change', (e)=>{
-    const file = e.target.files[0];
-    if(!file) return;
-    const reader = new FileReader();
-    reader.onload = () => {
-      try{
-        const parsed = JSON.parse(reader.result);
-        const incoming = Array.isArray(parsed) ? parsed : (parsed.entries || []);
-        const existing = loadLog();
-        // merge, de-duplicating on date+workorder+analyst+submittedAt
-        const key = r => [r.date,r.workorder,r.analyst,r.submittedAt].join('|');
-        const seen = new Set(existing.map(key));
-        let added = 0;
-        incoming.forEach(r=>{
-          if(!seen.has(key(r))){ existing.push(r); seen.add(key(r)); added++; }
-        });
-        existing.sort((a,b)=> new Date(b.submittedAt||b.date||0) - new Date(a.submittedAt||a.date||0));
-        saveLog(existing);
-        renderLogTable(existing);
-        setStatus(`Imported — ${added} new entr${added===1?'y':'ies'} merged`);
-      }catch(err){
-        setStatus('Import failed — not a valid log file', false);
-        console.error(err);
-      }
-      e.target.value = '';
-    };
-    reader.readAsText(file);
-  });
 
   document.getElementById('clearLogBtn').addEventListener('click', ()=>{
     const log = loadLog();
     if(!log.length){ setStatus('Log is already empty'); return; }
-    if(!confirm(`Clear all ${log.length} entr${log.length===1?'y':'ies'} from the Summary Log on this machine? Export first if you want a backup — this cannot be undone.`)) return;
+    if(!confirm(`Clear all ${log.length} entr${log.length===1?'y':'ies'} from the Summary Log on this machine? This cannot be undone.`)) return;
     saveLog([]);
     renderLogTable([]);
     setStatus('Log cleared');
@@ -1566,13 +2246,600 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var n,r,i,a,
     setDeviceMode(btn.dataset.mode);
   });
 
+
+  // =====================================================================
+  // ---------- v18 · TGA801 run CSV → Section D (type OR upload) ----------
+  // One sample per file, ';' separated, no header — the same layout the
+  // LOI Correction Factor Preview v4 reads:
+  //  0 sample id | 1 run stamp ddmmyyHHMM | 2 SW sample wt | 3 CW crucible wt | 4 crucible no |
+  //  5-12 WT105_IN, WT105_OUT, WT425_IN, WT425_OUT, WT650_IN, WT650_OUT, WT1000_IN, WT1000_OUT |
+  //  13-16 CF105, CF425, CF650, CF1000 | 17-20 blank crucible names | 21-24 blank crucible wts | 25 flag
+  // Formulas (identical to the LOI Correction Factor Preview, which reproduces the
+  // LOI tab of FI_CCLAS_New.xlsx):
+  //  M        = SW × WT105_IN ÷ (SW + CW)
+  //  Auto H2O = LOI105  = 100 × (WT105_IN − WT105_OUT − CF105) ÷ M
+  //  Auto LOI = LOI1000 = 100 × (WT105_OUT − WT1000_OUT − CF1000) ÷ M × 100 ÷ (100 − LOI105)
+  // Filled values are rounded to 4 dp. Typing over a value drops the CSV link for that row.
+  // =====================================================================
+  const r4n = v => Math.round(v*1e4)/1e4;
+  function tgaCalc(sw, cw, w, cf){
+    const K = w[0], L = w[1], O = w[7];
+    if(![sw,cw,K,L,O,cf[0],cf[3]].every(Number.isFinite) || sw+cw===0) return null;
+    const M = sw*K/(sw+cw);
+    if(!M) return null;
+    const h2o = 100*(K - L - cf[0])/M;
+    if(h2o===100) return null;
+    const loi = 100*(L - O - cf[3])/M * 100/(100 - h2o);
+    return { M, h2o, loi };
+  }
+  function tgaParse(name, text){
+    const recs = [];
+    text.replace(/\r/g,'').split('\n').filter(l => l.trim()).forEach(l => {
+      const f = l.split(l.includes(';') ? ';' : ',').map(s => s.trim());
+      const n = i => (f[i]===undefined || f[i]==='') ? NaN : Number(f[i]);
+      if(f.length < 17 || !Number.isFinite(n(2)) || !Number.isFinite(n(5)))
+        throw new Error(`${name} isn’t a TGA run file (expected ';'-separated weights and correction factors)`);
+      const m = f[0].toUpperCase().replace(/\s+/g,'').match(/ASCRM0*(30|32|34)(?!\d)/);
+      const st = (f[1]||'').match(/^(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})$/);
+      recs.push({
+        file:name, sample:f[0], product: m ? 'A'+m[1] : null,
+        run: st ? `20${st[3]}-${st[2]}-${st[1]} ${st[4]}:${st[5]}` : (f[1]||''),
+        runDate: st ? `20${st[3]}-${st[2]}-${st[1]}` : null,
+        sw:n(2), cw:n(3), w:[5,6,7,8,9,10,11,12].map(n), cf:[13,14,15,16].map(n)
+      });
+    });
+    return recs;
+  }
+  function cleanSrc(x){
+    if(!x || typeof x!=='object') return null;
+    const str = v => typeof v==='string' ? v.slice(0,120) : '';
+    const arr = (a,len) => Array.isArray(a) && a.length===len && a.every(v => typeof v==='number' || v===null) ? a.map(v => v===null ? NaN : v) : null;
+    const w = arr(x.w,8), cf = arr(x.cf,4);
+    if(!w || !cf || typeof x.sw!=='number' || typeof x.cw!=='number') return null;
+    return { file:str(x.file), sample:str(x.sample), run:str(x.run), sw:x.sw, cw:x.cw, w, cf };
+  }
+  const runShort = r => /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}$/.test(r) ? `${r.slice(8,10)}/${r.slice(5,7)} ${r.slice(11)}` : r;
+
+  function renderTgaTags(){
+    GROUPS.forEach(g => {
+      const el = document.getElementById(`Out_D_${g}_src`);
+      if(!el) return;
+      const d = state.D[g] || {};
+      const has = num(d.autoH2O)!==null || num(d.autoLOI)!==null;
+      if(d.src){
+        el.className = 'srctag';
+        el.textContent = `CSV · ${runShort(d.src.run)}`;
+        el.title = `From ${d.src.file} — sample ${d.src.sample}, run ${d.src.run}`;
+      } else if(has){
+        el.className = 'srctag typed'; el.textContent = 'typed'; el.title = 'Typed in by hand';
+      } else {
+        el.className = 'srctag'; el.textContent = ''; el.title = '';
+      }
+    });
+  }
+  function tgaMsg(lines){
+    const el = document.getElementById('tgaMsg');
+    if(!el) return;
+    const esc = x => String(x).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    el.innerHTML = lines.map(([k,t]) => `<div class="${k}">${k==='ok'?'✓':'!'} ${esc(t)}</div>`).join('');
+  }
+
+  async function handleTgaFiles(list){
+    const files = [...list].filter(f => /\.csv$/i.test(f.name) || f.type==='text/csv');
+    if(!files.length){ tgaMsg([['warn','No .csv files in that selection.']]); return; }
+    const ok = [], warn = [];
+    let recs = [];
+    for(const f of files){
+      try{ recs = recs.concat(tgaParse(f.name, await f.text())); }
+      catch(e){ warn.push(['warn', e.message]); }
+    }
+    const pick = {};
+    recs.forEach(r => {
+      if(!r.product){ warn.push(['warn', `${r.file}: “${r.sample}” isn’t A30, A32 or A34 — skipped`]); return; }
+      const k = tgaCalc(r.sw, r.cw, r.w, r.cf);
+      if(!k || !Number.isFinite(k.h2o) || !Number.isFinite(k.loi)){ warn.push(['warn', `${r.file}: weights or correction factors missing — skipped`]); return; }
+      Object.assign(r, k);
+      const prev = pick[r.product];
+      if(prev){
+        const later = r.run > prev.run ? r : prev;
+        warn.push(['warn', `Two ${r.product} files — used the later run, ${later.file}`]);
+        pick[r.product] = later;
+      } else pick[r.product] = r;
+    });
+    const gs = GROUPS.filter(g => pick[g]);
+    if(!gs.length){ tgaMsg(warn.length ? warn : [['warn','Nothing to fill.']]); return; }
+
+    const clash = gs.filter(g => {
+      const d = state.D[g];
+      const has = num(d.autoH2O)!==null || num(d.autoLOI)!==null;
+      return has && !(d.src && d.src.file===pick[g].file);
+    });
+    if(clash.length && !confirm(`Replace the Auto values already entered for ${clash.join(', ')} with the CSV results?`)){
+      tgaMsg([['warn','Upload cancelled — nothing changed.']]);
+      return;
+    }
+    const dateOff = {};
+    gs.forEach(g => {
+      const r = pick[g];
+      state.D[g].autoH2O = r4n(r.h2o);
+      state.D[g].autoLOI = r4n(r.loi);
+      state.D[g].src = { file:r.file, sample:r.sample, run:r.run, sw:r.sw, cw:r.cw, w:r.w, cf:r.cf };
+      document.getElementById(`In_D_${g}_autoH2O`).value = state.D[g].autoH2O;
+      document.getElementById(`In_D_${g}_autoLOI`).value = state.D[g].autoLOI;
+      ok.push(['ok', `${g}: H₂O ${r.h2o.toFixed(2)}%, LOI ${r.loi.toFixed(2)}% — ${r.file}`]);
+      if(state.date && r.runDate && r.runDate!==state.date) (dateOff[r.runDate] = dateOff[r.runDate] || []).push(g);
+    });
+    Object.keys(dateOff).forEach(d => warn.push(['warn', `${dateOff[d].join(', ')} ${dateOff[d].length===1?'was':'were'} run on ${d}, but the worksheet date is ${state.date}`]));
+    markDirty();
+    renderAll();
+    tgaMsg(ok.concat(warn));
+  }
+
+  (function wireTga(){
+    const drop = document.getElementById('tgaDrop'), inp = document.getElementById('tgaFile');
+    document.getElementById('tgaBtn').addEventListener('click', () => inp.click());
+    inp.addEventListener('change', e => { const f = e.target.files; handleTgaFiles(f).finally(() => { e.target.value=''; }); });
+    ['dragenter','dragover'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.add('over'); }));
+    ['dragleave','drop'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.remove('over'); }));
+    drop.addEventListener('drop', e => handleTgaFiles(e.dataTransfer.files));
+  })();
+
+  // =====================================================================
+  // ---------- v16 · Calculation logic view (explanation + verification) ----------
+  // Everything below is READ-ONLY with respect to the worksheet: it never writes
+  // to `state`, storage, the log or the PDF. It recalculates every step on its own
+  // from the raw inputs (deliberately NOT calling computeAll's helpers) and then
+  // compares each result with computeAll() / the on-screen stamp. A green ✓ means
+  // the worksheet and the independent recalculation agree; a red ✗ means they
+  // have drifted apart and the worksheet code needs checking.
+  // =====================================================================
+  const L_EPS = 1e-9;
+  const isN = v => typeof v==='number' && isFinite(v);
+  const MISS = '<span class="lmiss" title="Not entered yet">?</span>';
+  const neg = (v, txt) => v < 0 ? `(${txt})` : txt;         // wrap negative operands: a − (−b)
+  const iv = v => isN(v) ? neg(v, String(v)) : MISS;         // raw input, as entered
+  // intermediates: 4 dp, but small non-zero values (e.g. blank drift) get 6 dp so they don't read as 0.0000
+  const fx4 = v => (v!==0 && Math.abs(v) < 0.01) ? v.toFixed(6) : v.toFixed(4);
+  const v4 = v => isN(v) ? neg(v, fx4(v)) : MISS;            // intermediate used as an operand
+  const r4 = (v, unit='') => isN(v) ? fx4(v) + unit : MISS;  // a result (no brackets, unit only when known)
+  const p4 = v => isN(v) ? v.toFixed(4)+'%' : MISS;          // percentage, 4 dp
+  const shownNum = v => isN(v) ? v.toFixed(4) : '';          // what the worksheet shows (masses)
+  const shownPct = v => isN(v) ? v.toFixed(2)+'%' : '';      // what the worksheet shows (percent)
+
+  let lTally = null, lSec = 'A';
+  let activeView = 'worksheet';
+  let panelSec = null, panelReturnFocus = null;
+
+  const L_SECS = {
+    A:{title:'Hygroscopic moisture', sub:'Blanks, STD and Parcher H₂O'},
+    B:{title:'Manual XLOI', sub:'Mass loss on ignition per crucible'},
+    C:{title:'Manual LOI', sub:'Moisture removed, dry-sample basis'},
+    D:{title:'Auto vs manual LOI', sub:'±5% relative check and the stamp'}
+  };
+
+  function lMark(indep, prod){
+    const empty = x => x===null || x===undefined || x==='' || (typeof x==='number' && !isFinite(x));
+    let st;
+    if(empty(indep) && empty(prod)) st = 'wait';
+    else if(empty(indep) || empty(prod)) st = 'bad';
+    else if(typeof indep==='string' || typeof prod==='string') st = (indep===prod) ? 'ok' : 'bad';
+    else st = Math.abs(indep-prod) <= L_EPS*Math.max(1, Math.abs(indep), Math.abs(prod)) ? 'ok' : 'bad';
+    lTally[lSec][st]++;
+    return st;
+  }
+  function lChip(st, shownTxt){
+    if(st==='ok')  return `<span class="lchk ok" title="Matches the value on the Worksheet">✓ <span>${shownTxt||'matches'}</span></span>`;
+    if(st==='bad') return `<span class="lchk bad" title="The Worksheet shows something different">✗ worksheet: ${shownTxt||'blank'}</span>`;
+    return `<span class="lchk wait" title="Not enough inputs yet">waiting</span>`;
+  }
+  function lRow(label, expr, res, st, shownTxt, eq=true){
+    return `<tr><th scope="row">${label}</th><td class="lexpr">${expr}</td><td class="lres">${eq?'= ':''}${res}</td><td class="lcheck">${st ? lChip(st, shownTxt) : ''}</td></tr>`;
+  }
+  function lDef(sym, text){ return `<div><dt>${sym}</dt><dd>${text}</dd></div>`; }
+  function lStep(id, title, why, formula, defs, rows, note){
+    return `<article class="lstep" id="L_${id}">
+      <header class="lstep-head"><span class="lnum">${id}</span><h3>${title}</h3></header>
+      <p class="lwhy">${why}</p>
+      <div class="lformula">${formula}</div>
+      ${defs ? `<dl class="ldefs">${defs}</dl>` : ''}
+      ${rows ? `<div class="lwork-wrap"><table class="lwork"><tbody>${rows}</tbody></table></div>` : ''}
+      ${note ? `<div class="lnote">${note}</div>` : ''}
+    </article>`;
+  }
+
+  // ---------- Section A ----------
+  function lBuildA(calc){
+    lSec = 'A';
+    const SA = state.A;
+    let html = '', rows = '', st;
+
+    // A1 blanks
+    const bG = SA.blank.map(r => { const f=num(r.F), d=num(r.D); return (f!==null && d!==null) ? f-d : null; });
+    const bAvg = (bG[0]!==null && bG[1]!==null) ? (bG[0]+bG[1])/2 : null;
+    SA.blank.forEach((r,i)=>{
+      st = lMark(bG[i], calc.blankG[i]);
+      rows += lRow(`Blank ${i+1}`, `${iv(num(r.F))} − ${iv(num(r.D))}`, r4(bG[i],' g'), st, shownNum(calc.blankG[i]));
+    });
+    st = lMark(bAvg, calc.blankAvg);
+    rows += lRow('Blank mean', `(${v4(bG[0])} + ${v4(bG[1])}) ÷ 2`, `<b>${r4(bAvg,' g')}</b>`, st, shownNum(calc.blankAvg));
+    html += lStep('A1', 'Blank correction',
+      'Two empty crucibles go through the same drying as the samples. The mass change of each is averaged, and that average is taken off every sample’s dry mass in A3.',
+      '<var>B</var> = <var>F</var> − <var>D</var> &nbsp;&nbsp;&nbsp; <var>B</var><sub>avg</sub> = (<var>B</var><sub>1</sub> + <var>B</var><sub>2</sub>) ÷ 2',
+      lDef('D','empty crucible (g)') + lDef('F','crucible after drying (g)') + lDef('B','mass change of an empty crucible (g)'),
+      rows,
+      '<p>Both blanks are needed. Until both are entered, no dry mass or moisture in Section A is calculated.</p>');
+
+    // collect STD + product rows
+    const items = [];
+    [0,1].forEach(i => items.push({ label:`STD ${i+1}`, row:SA.std[i], G:calc.stdG[i], H:calc.stdH[i] }));
+    GROUPS.forEach(g => [0,1].forEach(i => items.push({
+      label:`${g} – ${i+1}`, grp:g, row:SA[g][i], G:calc.groupsA[g].rows[i].G, H:calc.groupsA[g].rows[i].H })));
+    items.forEach(it => {
+      it.d = num(it.row.D); it.e = num(it.row.E); it.f = num(it.row.F);
+      const ready = it.d!==null && it.e!==null && it.f!==null && bAvg!==null && it.e!==0;
+      it.gv = ready ? it.f - it.d : null;
+      it.hv = ready ? ((it.e - (it.gv - bAvg)) / it.e) * 100 : null;
+    });
+
+    // A2 dry mass
+    rows = '';
+    items.forEach(it => {
+      st = lMark(it.gv, it.G);
+      rows += lRow(it.label, `${iv(it.f)} − ${iv(it.d)}`, r4(it.gv,' g'), st, shownNum(it.G));
+    });
+    html += lStep('A2', 'Dry mass',
+      'The dried sample plus its crucible, minus the empty crucible.',
+      '<var>G</var> = <var>F</var> − <var>D</var>',
+      lDef('D','empty crucible (g)') + lDef('F','dry weight + crucible (g)'),
+      rows,
+      '<p>The worksheet only shows a dry mass once the sample mass (<var>E</var>) and both blanks are also entered. This view applies the same rule.</p>');
+
+    // A3 moisture
+    rows = '';
+    items.forEach(it => {
+      st = lMark(it.hv, it.H);
+      rows += lRow(it.label, `(${iv(it.e)} − (${v4(it.gv)} − ${v4(bAvg)})) ÷ ${iv(it.e)} × 100`, p4(it.hv), st, shownPct(it.H));
+    });
+    html += lStep('A3', 'Hygroscopic moisture',
+      'The mass the sample lost on drying, after the blank correction, as a percentage of the sample mass.',
+      '<var>H</var> = (<var>E</var> − (<var>G</var> − <var>B</var><sub>avg</sub>)) ÷ <var>E</var> × 100',
+      lDef('E','sample only (g)') + lDef('G','dry mass from A2 (g)') + lDef('B<sub>avg</sub>','blank mean from A1 (g)'),
+      rows, '');
+
+    // A4 STD check
+    rows = '';
+    items.slice(0,2).forEach((it,i) => {
+      const res = isN(it.hv) ? ((it.hv>=28.5 && it.hv<=29.2) ? 'Pass' : 'Fail') : null;
+      st = lMark(res, calc.stdCheck[i]);
+      rows += lRow(it.label, `28.50 ≤ ${p4(it.hv)} ≤ 29.20 ?`, res ? badgeHTML(res) : MISS, st, calc.stdCheck[i]||'');
+    });
+    const sAvg = (isN(items[0].hv) && isN(items[1].hv)) ? (items[0].hv + items[1].hv)/2 : null;
+    st = lMark(sAvg, calc.stdAvg);
+    rows += lRow('STD mean', `(${p4(items[0].hv)} + ${p4(items[1].hv)}) ÷ 2`, p4(sAvg), st, shownPct(calc.stdAvg));
+    html += lStep('A4', 'STD check',
+      'Each STD crucible passes when its moisture is between 28.5% and 29.2%, inclusive.',
+      '28.50 ≤ <var>H</var><sub>STD</sub> ≤ 29.20 &nbsp;→&nbsp; Pass',
+      '', rows,
+      '<p>Each STD is checked on its own, using the full-precision value — a result of 29.204% is displayed as 29.20% but fails.</p>' +
+      '<p>The STD mean is for information only. <strong>The STD check does not change the PASS / FAIL stamp</strong> in Section D.</p>');
+
+    // A5 Parcher H2O per product
+    rows = '';
+    const w = {};
+    GROUPS.forEach(g => {
+      const pair = items.filter(it => it.grp===g);
+      const avg = (isN(pair[0].hv) && isN(pair[1].hv)) ? (pair[0].hv + pair[1].hv)/2 : null;
+      w[g] = avg;
+      st = lMark(avg, calc.groupsA[g].avg);
+      rows += lRow(g, `(${p4(pair[0].hv)} + ${p4(pair[1].hv)}) ÷ 2`, `<b>${p4(avg)}</b>`, st, shownPct(calc.groupsA[g].avg));
+    });
+    html += lStep('A5', 'Parcher H₂O per product',
+      'The mean of the two duplicate moisture results. This is the value logged as “Parcher H₂O” and used in Section C.',
+      '<var>W</var> = (<var>H</var><sub>1</sub> + <var>H</var><sub>2</sub>) ÷ 2',
+      '', rows,
+      '<p>Both duplicates are needed — a single result is not used on its own.</p>');
+
+    return { html, w };
+  }
+
+  // ---------- Section B ----------
+  function lBuildB(calc){
+    lSec = 'B';
+    const SB = state.B;
+    let rowsSum = '', rowsX = '', rowsAvg = '', st;
+    const x = {};
+    GROUPS.forEach(g => {
+      const xs = [0,1].map(i => {
+        const r = SB[g][i], c = num(r.C), d = num(r.D), f = num(r.F);
+        const ready = c!==null && d!==null && f!==null;
+        const sum = ready ? c + d : null;
+        const den = ready ? sum - c : null;
+        const xl = (ready && den!==0) ? (sum - f) / den * 100 : null;
+        const pr = calc.groupsB[g].rows[i];
+        st = lMark(sum, pr.E);
+        rowsSum += lRow(`${g} – ${i+1}`, `${iv(c)} + ${iv(d)}`, r4(sum,' g'), st, shownNum(pr.E));
+        st = lMark(xl, pr.G);
+        rowsX += lRow(`${g} – ${i+1}`, `(${v4(sum)} − ${iv(f)}) ÷ (${v4(sum)} − ${iv(c)}) × 100`, p4(xl), st, shownPct(pr.G));
+        return xl;
+      });
+      const avg = (isN(xs[0]) && isN(xs[1])) ? (xs[0] + xs[1])/2 : null;
+      x[g] = avg;
+      st = lMark(avg, calc.groupsB[g].avg);
+      rowsAvg += lRow(g, `(${p4(xs[0])} + ${p4(xs[1])}) ÷ 2`, `<b>${p4(avg)}</b>`, st, shownPct(calc.groupsB[g].avg));
+    });
+
+    let html = '';
+    html += lStep('B1', 'Sum',
+      'Empty crucible plus the sample mass.',
+      '<var>S</var> = <var>C</var> + <var>D</var>',
+      lDef('C','empty crucible (g)') + lDef('D','sample only (g)'),
+      rowsSum,
+      '<p>In B2 the divisor <var>S</var> − <var>C</var> is simply <var>D</var>, the sample mass. Before v19 this column was labelled “Crucible + Sample”; the calculation has always treated it as the sample mass on its own.</p>' +
+      '<p>Sum and XLOI only appear once all three weights for that crucible are entered.</p>');
+    html += lStep('B2', 'Manual XLOI per crucible',
+      'Mass lost on ignition as a percentage of the sample mass.',
+      '<var>X</var> = (<var>S</var> − <var>F</var>) ÷ (<var>S</var> − <var>C</var>) × 100 &nbsp;=&nbsp; (<var>C</var> + <var>D</var> − <var>F</var>) ÷ <var>D</var> × 100',
+      lDef('S','sum from B1 (g)') + lDef('F','crucible + ignited sample (g)') + lDef('C','empty crucible (g)'),
+      rowsX, '');
+    html += lStep('B3', 'Average manual XLOI',
+      'The mean of the two duplicate crucibles for each product.',
+      '<var>X</var><sub>avg</sub> = (<var>X</var><sub>1</sub> + <var>X</var><sub>2</sub>) ÷ 2',
+      '', rowsAvg,
+      '<p>Both duplicates are needed.</p>');
+    return { html, x };
+  }
+
+  // ---------- Section C ----------
+  function lBuildC(calc, w, x){
+    lSec = 'C';
+    let rows = '', st;
+    const m = {};
+    GROUPS.forEach(g => {
+      const X = x[g], W = w[g];
+      const loi = (isN(X) && isN(W) && (100 - W)!==0) ? ((X - W) * 100) / (100 - W) : null;
+      m[g] = loi;
+      st = lMark(loi, calc.groupsC[g].E);
+      rows += lRow(g, `(${v4(X)} − ${v4(W)}) × 100 ÷ (100 − ${v4(W)})`, `<b>${p4(loi)}</b>`, st, shownPct(calc.groupsC[g].E));
+    });
+    const html = lStep('C1', 'Manual LOI',
+      'The manual XLOI still contains the hygroscopic moisture. This takes the moisture out and rescales the result to the dry sample.',
+      '<var>LOI</var> = (<var>X</var><sub>avg</sub> − <var>W</var>) × 100 ÷ (100 − <var>W</var>)',
+      lDef('X<sub>avg</sub>','average manual XLOI from B3 (%)') + lDef('W','Parcher H₂O from A5 (%)'),
+      rows,
+      '<p>Needs both a B3 average and an A5 Parcher H₂O for the same product.</p>');
+    return { html, m };
+  }
+
+  // ---------- Section D ----------
+  function lBuildD(calc, m){
+    lSec = 'D';
+    let rows = '', rowsWin = '', st;
+    const res = {};
+
+    // D0 · Auto values from a TGA CSV (v18)
+    let rowsT = '';
+    GROUPS.forEach(g => {
+      const s = state.D[g] && state.D[g].src;
+      const ah = num(state.D[g].autoH2O), al = num(state.D[g].autoLOI);
+      if(!s){
+        rowsT += lRow(g, (ah!==null || al!==null) ? 'typed in by hand — nothing to recalculate' : 'no CSV uploaded', '', null, '', false);
+        return;
+      }
+      const K = s.w[0], L = s.w[1], O = s.w[7];
+      const M = s.sw*K/(s.sw + s.cw);
+      const h = 100*(K - L - s.cf[0])/M;
+      const l = 100*(L - O - s.cf[3])/M * 100/(100 - h);
+      rowsT += lRow(`${g} · M`, `${iv(s.sw)} × ${iv(K)} ÷ (${iv(s.sw)} + ${iv(s.cw)})`, r4(M,' g'), null);
+      st = lMark(isN(h) ? Math.round(h*1e4)/1e4 : null, ah);
+      rowsT += lRow(`${g} · H₂O`, `100 × (${iv(K)} − ${iv(L)} − ${iv(s.cf[0])}) ÷ ${v4(M)}`, p4(h), st, shownPct(ah));
+      st = lMark(isN(l) ? Math.round(l*1e4)/1e4 : null, al);
+      rowsT += lRow(`${g} · LOI`, `100 × (${iv(L)} − ${iv(O)} − ${iv(s.cf[3])}) ÷ ${v4(M)} × 100 ÷ (100 − ${v4(h)})`, p4(l), st, shownPct(al));
+    });
+    const d0 = lStep('D0', 'Auto values from a TGA CSV',
+      'When a TGA801 run file is uploaded, Auto H₂O is its LOI at 105 °C and Auto LOI is its LOI at 1000 °C, worked out from the weights and correction factors in the file. The tag under each product shows whether its values came from a CSV or were typed.',
+      '<var>M</var> = <var>SW</var> × <var>W</var><sub>105 in</sub> ÷ (<var>SW</var> + <var>CW</var>)<br>' +
+      'Auto H₂O = 100 × (<var>W</var><sub>105 in</sub> − <var>W</var><sub>105 out</sub> − <var>CF</var><sub>105</sub>) ÷ <var>M</var><br>' +
+      'Auto LOI = 100 × (<var>W</var><sub>105 out</sub> − <var>W</var><sub>1000 out</sub> − <var>CF</var><sub>1000</sub>) ÷ <var>M</var> × 100 ÷ (100 − Auto H₂O)',
+      lDef('SW','sample weight (field 3)') + lDef('CW','crucible weight (field 4)') +
+      lDef('W<sub>105 in/out</sub>','weights in and out of 105 °C (fields 6–7)') + lDef('W<sub>1000 out</sub>','final weight after 1000 °C (field 13)') +
+      lDef('CF','blank correction factors from the file (fields 14 and 17)'),
+      rowsT,
+      '<p>Same formulas as the LOI Correction Factor Preview, which reproduces the LOI tab of FI_CCLAS_New.xlsx. Values are rounded to 4 dp when filled in.</p>' +
+      '<p>Typing over an uploaded value replaces it and the row is then treated as typed.</p>');
+    GROUPS.forEach(g => {
+      const M = m[g], Au = num(state.D[g].autoLOI);
+      const ready = isN(M) && Au!==null && M!==0;
+      const tol = ready ? 0.05 * M : null;
+      const diff = ready ? Math.abs(M - Au) : null;
+      const r = ready ? (diff <= tol ? 'Pass' : 'Fail') : null;
+      res[g] = r;
+      st = lMark(r, calc.groupsD[g].result);
+      rows += lRow(g, `|${v4(M)} − ${iv(Au)}| = ${v4(diff)} &nbsp;≤&nbsp; 0.05 × ${v4(M)} = ${v4(tol)} ?`,
+        r ? badgeHTML(r) : MISS, st, calc.groupsD[g].result||'');
+      const cert = calc.groupsD[g].certified, ah = num(state.D[g].autoH2O);
+      rowsWin += lRow(g, isN(M) ? `Auto LOI ${(M*0.95).toFixed(4)}% to ${(M*1.05).toFixed(4)}%` : MISS,
+        `certified ${isN(cert) ? cert.toFixed(2)+'%' : '—'} · auto H₂O ${isN(ah) ? ah.toFixed(2)+'%' : '—'}`, null, '', false);
+    });
+
+    let html = d0;
+    html += lStep('D1', 'Auto vs manual LOI',
+      'Each product passes when the TGA (auto) LOI is within 5% of the manual LOI — 5% <em>of the manual value</em>, not 5 percentage points.',
+      '|<var>LOI</var><sub>manual</sub> − <var>LOI</var><sub>auto</sub>| ≤ 0.05 × <var>LOI</var><sub>manual</sub> &nbsp;→&nbsp; Pass',
+      lDef('LOI<sub>manual</sub>','from C1 (%)') + lDef('LOI<sub>auto</sub>','Auto LOI entered in Section D (%)'),
+      rows,
+      '<p>The comparison uses full-precision values, so a result right on the edge can differ from what the rounded numbers suggest.</p>');
+    html += lStep('D2', 'Acceptance window (reference)',
+      'The range the Auto LOI has to fall in for each product, with the values that are shown but not used in the result.',
+      '0.95 × <var>LOI</var><sub>manual</sub> &nbsp;to&nbsp; 1.05 × <var>LOI</var><sub>manual</sub>',
+      '', rowsWin,
+      '<p><strong>Not part of the result:</strong> the ASCRM certified value and the Auto Hygroscopic Moisture are displayed and logged for reference only.</p>');
+
+    // D3 stamp
+    const anyR = GROUPS.some(g => res[g]);
+    const anyFail = GROUPS.some(g => res[g]==='Fail');
+    const screen = !anyR ? 'PENDING' : (anyFail ? 'FAIL' : 'PASS');
+    const stampEl = document.getElementById('overallStamp');
+    const onScreen = stampEl ? stampEl.textContent.trim() : '';
+    // both still PENDING = nothing to verify yet (counts as waiting, not as a match)
+    st = (screen==='PENDING' && onScreen==='PENDING') ? lMark(null, null) : lMark(screen, onScreen);
+    const pdf = !anyR ? 'PENDING' : (GROUPS.every(g => res[g]==='Pass') ? 'PASS' : 'FAIL');
+    const summary = GROUPS.map(g => `${g} ${res[g] ? res[g] : 'pending'}`).join(', ');
+    let srows = lRow('Worksheet', summary, `<b>${screen}</b>`, st, onScreen);
+    srows += lRow('PDF on submit', 'all three must be Pass', `<b>${pdf}</b>`, null);
+    let snote = '<p><strong>Worksheet stamp:</strong> PENDING until at least one product has a result, FAIL if any product fails, otherwise PASS. Products still pending are ignored.</p>' +
+                '<p><strong>PDF stamp:</strong> PASS only when all three products pass — a product that is still pending prints as FAIL.</p>';
+    if(screen !== pdf){
+      snote += `<p class="lflag"><strong>Right now these differ:</strong> the worksheet shows ${screen}, but a PDF submitted now would print ${pdf}.</p>`;
+    }
+    html += lStep('D3', 'Overall stamp',
+      'How the single PASS / FAIL stamp is decided from the three product results.',
+      'any Fail → FAIL &nbsp;·&nbsp; none yet → PENDING &nbsp;·&nbsp; otherwise → PASS',
+      '', srows, snote);
+    return { html };
+  }
+
+  function lBuildAll(calc){
+    lTally = { A:{ok:0,bad:0,wait:0}, B:{ok:0,bad:0,wait:0}, C:{ok:0,bad:0,wait:0}, D:{ok:0,bad:0,wait:0} };
+    const a = lBuildA(calc), b = lBuildB(calc), c = lBuildC(calc, a.w, b.x), d = lBuildD(calc, c.m);
+    return { A:a.html, B:b.html, C:c.html, D:d.html };
+  }
+
+  function lBanner(t){
+    if(t.bad){
+      return `<div class="lbanner bad" role="status"><span class="lbanner-ico">✗</span><div><strong>${t.bad} value${t.bad===1?'':'s'} on the Worksheet ${t.bad===1?'does':'do'} not match the recalculation.</strong> Look for the red ✗ below — the worksheet code needs checking before results are relied on.</div></div>`;
+    }
+    if(t.ok){
+      return `<div class="lbanner ok" role="status"><span class="lbanner-ico">✓</span><div><strong>${t.ok===1 ? 'The 1 calculated value so far matches' : `All ${t.ok} calculated values match`} an independent recalculation.</strong>${t.wait ? ` ${t.wait} still waiting for inputs.` : ''}</div></div>`;
+    }
+    return `<div class="lbanner" role="status"><span class="lbanner-ico">○</span><div><strong>Nothing to check yet.</strong> Enter values on the Worksheet — the worked examples fill in as you type.</div></div>`;
+  }
+
+  function lFlow(){
+    const n = (s, label) => `<button type="button" class="lnode" data-jump="Lsec_${s}"><b>${s}</b>${label}</button>`;
+    return `<nav class="lflow" aria-label="How the sections feed into each other">
+      ${n('A','Parcher H₂O')}<span class="larrow">+</span>${n('B','Manual XLOI')}<span class="larrow">→</span>
+      ${n('C','Manual LOI')}<span class="larrow">→</span>${n('D','vs Auto LOI ±5%')}<span class="larrow">→</span>
+      <span class="lnode end">PASS / FAIL</span>
+    </nav>`;
+  }
+
+  function lGroup(sec, html){
+    return `<section class="lgroup" id="Lsec_${sec}" aria-labelledby="Lh_${sec}">
+      <h2 id="Lh_${sec}"><span class="letter">${sec}</span>${L_SECS[sec].title}<small>${L_SECS[sec].sub}</small></h2>
+      ${html}
+    </section>`;
+  }
+
+  function lSum(keys){
+    return keys.reduce((t,s)=>({ ok:t.ok+lTally[s].ok, bad:t.bad+lTally[s].bad, wait:t.wait+lTally[s].wait }), {ok:0,bad:0,wait:0});
+  }
+
+  function renderLogic(calc){
+    if(activeView!=='logic' && !panelSec) return;
+    const L = lBuildAll(calc);
+    if(activeView==='logic'){
+      document.getElementById('logicDyn').innerHTML =
+        lBanner(lSum(['A','B','C','D'])) + lFlow() + ['A','B','C','D'].map(s => lGroup(s, L[s])).join('');
+    }
+    if(panelSec){
+      document.getElementById('logicPanelBody').innerHTML = lBanner(lSum([panelSec])) + L[panelSec];
+    }
+  }
+
+  // ---------- view tabs ----------
+  function showView(v){
+    activeView = v;
+    document.getElementById('view-worksheet').hidden = (v!=='worksheet');
+    document.getElementById('view-logic').hidden = (v!=='logic');
+    document.querySelectorAll('#viewTabs button[data-view]').forEach(b => {
+      b.setAttribute('aria-selected', String(b.dataset.view===v));
+      b.tabIndex = (b.dataset.view===v) ? 0 : -1;
+    });
+    if(v==='logic'){ if(panelSec) closePanel(false); renderLogic(computeAll()); }
+    window.scrollTo(0,0);
+  }
+  document.getElementById('viewTabs').addEventListener('click', e => {
+    const b = e.target.closest('button[data-view]');
+    if(b) showView(b.dataset.view);
+  });
+  document.getElementById('viewTabs').addEventListener('keydown', e => {
+    if(e.key!=='ArrowLeft' && e.key!=='ArrowRight') return;
+    const next = activeView==='worksheet' ? 'logic' : 'worksheet';
+    showView(next);
+    document.querySelector(`#viewTabs button[data-view="${next}"]`).focus();
+  });
+  document.getElementById('view-logic').addEventListener('click', e => {
+    const j = e.target.closest('[data-jump]');
+    if(!j) return;
+    const t = document.getElementById(j.dataset.jump);
+    if(t) t.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block:'start'});
+  });
+
+  // ---------- ƒx side panel ----------
+  const lPanel = document.getElementById('logicPanel');
+  const lBackdrop = document.getElementById('logicBackdrop');
+  lPanel.inert = true;
+  function openPanel(sec, btn){
+    panelSec = sec;
+    panelReturnFocus = btn || null;
+    document.getElementById('logicPanelTitle').textContent = `How Section ${sec} is calculated`;
+    lPanel.classList.add('open'); lPanel.inert = false; lPanel.setAttribute('aria-hidden','false');
+    lBackdrop.classList.add('open');
+    document.body.classList.add('lpanel-open');
+    renderLogic(computeAll());
+    document.getElementById('logicPanelBody').scrollTop = 0;
+    document.getElementById('logicPanelClose').focus();
+  }
+  function closePanel(restoreFocus=true){
+    panelSec = null;
+    lPanel.classList.remove('open'); lPanel.inert = true; lPanel.setAttribute('aria-hidden','true');
+    lBackdrop.classList.remove('open');
+    document.body.classList.remove('lpanel-open');
+    if(restoreFocus && panelReturnFocus) panelReturnFocus.focus();
+    panelReturnFocus = null;
+  }
+  document.querySelectorAll('.fxbtn[data-logic]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if(panelSec===btn.dataset.logic){ closePanel(); return; }
+      openPanel(btn.dataset.logic, btn);
+    });
+  });
+  document.getElementById('logicPanelClose').addEventListener('click', () => closePanel());
+  lBackdrop.addEventListener('click', () => closePanel());
+  document.getElementById('logicPanelFull').addEventListener('click', () => {
+    const sec = panelSec;
+    closePanel(false);
+    showView('logic');
+    const t = document.getElementById('Lsec_'+sec);
+    if(t) t.scrollIntoView({block:'start'});
+  });
+  document.addEventListener('keydown', e => { if(e.key==='Escape' && panelSec) closePanel(); });
+
+  // ---------- v19 · light / dark toggle (dark default, remembered per browser) ----------
+  (function(){
+    const btn = document.getElementById('themeToggle');
+    const sync = () => {
+      const light = document.documentElement.getAttribute('data-theme')==='light';
+      const label = light ? 'Switch to dark mode' : 'Switch to light mode';
+      btn.setAttribute('aria-label', label); btn.title = label;
+    };
+    btn.addEventListener('click', () => {
+      const light = document.documentElement.getAttribute('data-theme')!=='light';
+      if(light) document.documentElement.setAttribute('data-theme','light');
+      else document.documentElement.removeAttribute('data-theme');
+      try{ localStorage.setItem('parcher_loi_theme', light ? 'light' : 'dark'); }catch(e){}
+      sync();
+    });
+    sync();
+  })();
+
   // ---------- init ----------
   function init(){
     setDeviceMode(lsGet(LS_DEVICE_MODE, 'ipad'));
     certifiedValues = loadCertifiedValues();
-    refreshDraftDropdown();
+    refreshLegacyDrafts();
     renderLogTable(loadLog());
-    setStatus('Ready — saved locally in this browser');
+    setStatus('Ready');
     loadHeaderIntoForm();
     buildAllTables();
     populateInputsFromState();
@@ -1582,5 +2849,6 @@ function(t){t.__bidiEngine__=t.prototype.__bidiEngine__=function(t){var n,r,i,a,
   init();
 })();
 </script>
-</body>
-</html>
+
+
+</body></html>
